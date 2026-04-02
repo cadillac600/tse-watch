@@ -5,19 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>東証 上場維持基準 監視サイト</title>
   <style>
-    body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f5f7; }
-    .box { text-align: center; background: #fff; padding: 48px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
-    h1 { font-size: 22px; color: #1a1a2e; margin-bottom: 12px; }
-    p { color: #666; font-size: 14px; }
-    .spinner { margin: 24px auto; width: 40px; height: 40px; border: 4px solid #e0e0e0; border-top-color: #1565c0; border-radius: 50%; animation: spin 1s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f4f5f7;
+      color: #1a1a2e;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    header h1 { font-size: 20px; font-weight: 700; letter-spacing: 0.02em; }
+    header .meta { font-size: 12px; opacity: 0.7; }
+    .summary-bar {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 12px 24px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .summary-bar .label { font-size: 12px; color: #666; }
+    .summary-bar .num { font-size: 22px; font-weight: 700; margin-left: 4px; }
+    .num.danger { color: #d32f2f; }
+    .num.warning { color: #f57c00; }
+    .notice {
+      background: #fff8e1;
+      border-left: 4px solid #f9a825;
+      margin: 16px 24px;
+      padding: 12px 16px;
+      font-size: 12px;
+      color: #555;
+      border-radius: 0 4px 4px 0;
+    }
+    main { padding: 0 24px 48px; max-width: 1200px; margin: 0 auto; }
+    section { margin-top: 28px; }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 6px 6px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2.color-danger { background: #ffebee; color: #b71c1c; border: 1px solid #ef9a9a; }
+    h2.color-warning { background: #fff3e0; color: #bf360c; border: 1px solid #ffcc80; }
+    h2.color-supervision { background: #fce4ec; color: #880e4f; border: 1px solid #f48fb1; }
+    .count { font-size: 13px; font-weight: 400; opacity: 0.8; }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+    }
+    th {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      text-align: left;
+      font-size: 12px;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+      white-space: nowrap;
+    }
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: middle;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr.color-danger { background: #fff5f5; }
+    tr.color-warning { background: #fffbf0; }
+    tr.color-danger:hover { background: #ffebee; }
+    tr.color-warning:hover { background: #fff3e0; }
+    .cap-cell { text-align: right; font-variant-numeric: tabular-nums; }
+    .deadline-cell { font-weight: 600; color: #d32f2f; }
+    a { color: #1565c0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 4px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+    .badge-danger { background: #d32f2f; color: #fff; }
+    .badge-warning { background: #f57c00; color: #fff; }
+    .badge-supervision { background: #880e4f; color: #fff; }
+    .empty { padding: 16px; background: #fff; border: 1px solid #e0e0e0; border-top: none; color: #999; font-size: 13px; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 11px;
+      color: #999;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header, .summary-bar, main { padding-left: 12px; padding-right: 12px; }
+      .notice { margin-left: 12px; margin-right: 12px; }
+      table { font-size: 12px; }
+      td, th { padding: 6px 8px; }
+    }
   </style>
 </head>
 <body>
-  <div class="box">
+<header>
+  <div>
     <h1>📊 東証 上場維持基準 監視サイト</h1>
-    <div class="spinner"></div>
-    <p>初回データ取得中です。<br>GitHub Actionsを実行してください。<br>数分後に自動的に更新されます。</p>
+    <div>2025年3月〜厳格化された上場維持基準に注意が必要な銘柄を自動抽出</div>
   </div>
+  <div class="meta">最終更新: 2026年4月2日 06:08<br>毎日自動更新（GitHub Actions）</div>
+</header>
+
+<div class="summary-bar">
+  <div>
+    <span class="label">今月基準日・危険ゾーン</span>
+    <span class="num danger">0</span>
+    <span class="label">銘柄</span>
+  </div>
+  <div>
+    <span class="label">今月基準日・注意ゾーン</span>
+    <span class="num warning">0</span>
+    <span class="label">銘柄</span>
+  </div>
+  <div>
+    <span class="label">監視対象合計（全月）</span>
+    <span class="num" style="color:#1565c0">0</span>
+    <span class="label">銘柄</span>
+  </div>
+</div>
+
+<div class="notice">
+  ⚠️ <strong>免責事項：</strong>
+  表示される時価総額は「会社全体の時価総額」（株価 × 発行済株式数）の推定値です。
+  上場維持基準の判定に使われる「流通株式時価総額」とは異なります。
+  流通株式比率を30%と仮定したおおよその目安として参考にしてください。
+  投資判断の根拠にはしないでください。
+  基準日は各銘柄の決算月の月末最終日です。
+</div>
+
+<main>
+  <section id="danger-this-month"><h2 class="color-danger">🔴 今月(4月)が基準日・危険ゾーン（時価総額が基準の半分以下の目安）</h2><p class="empty">該当銘柄なし</p></section>
+  <section id="warning-this-month"><h2 class="color-warning">🟠 今月(4月)が基準日・注意ゾーン（時価総額が基準付近の目安）</h2><p class="empty">該当銘柄なし</p></section>
+  
+  <section id="danger-other"><h2 class="color-danger">⚠️ 危険ゾーン（来月以降が基準日）</h2><p class="empty">該当銘柄なし</p></section>
+  <section id="warning-other"><h2 class="color-warning">💛 注意ゾーン（来月以降が基準日）</h2><p class="empty">該当銘柄なし</p></section>
+</main>
+
+<footer>
+  データ出典：<a href="https://www.jpx.co.jp/markets/statistics-equities/misc/01.html" target="_blank">東証上場銘柄一覧（JPX）</a>、
+  時価総額：Yahoo Finance Japan（非公式）<br>
+  本サイトは個人学習目的で作成されており、投資助言ではありません。
+</footer>
 </body>
 </html>
