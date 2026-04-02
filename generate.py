@@ -1,12 +1,11 @@
 """
-東証上場維持基準 監視スクリプト v3
+東証上場維持基準 監視スクリプト v4
 - JPX公式XLSから銘柄一覧を取得
-- stooq.com から株価取得
-- Yahoo Finance から発行済株式数・決算月を取得
-- 指定月の基準日銘柄を優先表示
+- yfinance から株価・発行済株式数・決算月を取得（並列処理）
+- 今月・先月の基準日銘柄を優先表示
 """
 
-import os, sys, json, datetime, calendar, time, urllib.request, subprocess, threading
+import os, sys, json, datetime, calendar, urllib.request, subprocess, threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 OUTPUT_DIR = "docs"
@@ -15,7 +14,10 @@ CRITERIA = {
     "スタンダード": {"danger": 15,  "warning": 33},
     "グロース":    {"danger": 8,   "warning": 17},
 }
-TARGET_MONTH = int(sys.argv[1]) if len(sys.argv) > 1 else datetime.date.today().month
+
+TODAY = datetime.date.today()
+TARGET_MONTH = int(sys.argv[1]) if len(sys.argv) > 1 else TODAY.month
+PREV_MONTH = TARGET_MONTH - 1 if TARGET_MONTH > 1 else 12
 
 
 def fetch_stock_list():
@@ -37,62 +39,44 @@ def fetch_stock_list():
     return df
 
 
-def get_price_stooq(code):
-    url = f"https://stooq.com/q/d/l/?s={code}.jp&i=d"
+def get_stock_info(code):
+    """yfinance で株価・株式数・決算月を1件取得"""
+    import yfinance as yf
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=8) as resp:
-            lines = resp.read().decode("utf-8").strip().split("\n")
-        if len(lines) >= 2:
-            cols = lines[-1].split(",")
-            if len(cols) >= 5 and cols[4] not in ("", "N/D", "null"):
-                return float(cols[4])
+        info = yf.Ticker(f"{code}.T").info
+        price = (info.get("currentPrice")
+                 or info.get("regularMarketPrice")
+                 or info.get("previousClose"))
+        shares = info.get("sharesOutstanding")
+        fiscal_ts = info.get("fiscalYearEnd")
+        fiscal_month = (datetime.datetime.utcfromtimestamp(fiscal_ts).month
+                        if fiscal_ts else None)
+        return price, shares, fiscal_month
     except Exception:
-        pass
-    return None
-
-
-def get_shares_and_fiscal(code):
-    url = (f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{code}.T"
-           f"?modules=defaultKeyStatistics%2CsummaryDetail")
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
-        with urllib.request.urlopen(req, timeout=8) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        r = data.get("quoteSummary", {}).get("result", [{}])[0]
-        shares = r.get("defaultKeyStatistics", {}).get("sharesOutstanding", {}).get("raw")
-        fiscal_fmt = r.get("summaryDetail", {}).get("fiscalYearEnd", {}).get("fmt")
-        m = {"january":1,"february":2,"march":3,"april":4,"may":5,"june":6,
-             "july":7,"august":8,"september":9,"october":10,"november":11,"december":12}
-        fiscal_month = m.get(str(fiscal_fmt).lower()) if fiscal_fmt else None
-        return shares, fiscal_month
-    except Exception:
-        return None, None
-
-
-def _fetch_one(code):
-    price = get_price_stooq(code)
-    shares, fiscal_month = get_shares_and_fiscal(code)
-    market_cap = round(price * shares / 1e8, 1) if price and shares else None
-    return code, {"market_cap": market_cap, "fiscal_month": fiscal_month}
+        return None, None, None
 
 
 def fetch_stock_data(codes):
-    print("[2/4] 株価・株式数・決算月を取得中（並列処理）...")
+    print("[2/4] 株価・株式数・決算月を並列取得中（yfinance / 15ワーカー）...")
     results = {}
     lock = threading.Lock()
-    done_count = [0]
+    done = [0]
 
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = {executor.submit(_fetch_one, code): code for code in codes}
+    def fetch_one(code):
+        price, shares, fiscal_month = get_stock_info(code)
+        market_cap = round(price * shares / 1e8, 1) if price and shares else None
+        return code, {"market_cap": market_cap, "fiscal_month": fiscal_month}
+
+    with ThreadPoolExecutor(max_workers=15) as executor:
+        futures = {executor.submit(fetch_one, code): code for code in codes}
         for future in as_completed(futures):
             code, data = future.result()
             with lock:
                 results[code] = data
-                done_count[0] += 1
-                if done_count[0] % 200 == 0:
+                done[0] += 1
+                if done[0] % 500 == 0:
                     got = sum(1 for v in results.values() if v["market_cap"])
-                    print(f"  → {done_count[0]}/{len(codes)}件（時価総額取得済: {got}件）")
+                    print(f"  → {done[0]}/{len(codes)}件（時価総額取得済: {got}件）")
 
     got = sum(1 for v in results.values() if v["market_cap"])
     print(f"  → 完了: {got}/{len(codes)}件取得")
@@ -131,39 +115,79 @@ def fetch_supervision_list():
 
 def generate_html(stocks_data, supervision_list, generated_at):
     print("[4/4] HTMLを生成中...")
-    today = datetime.date.today()
     tm = TARGET_MONTH
+    pm = PREV_MONTH
     tm_ja = f"{tm}月"
+    pm_ja = f"{pm}月"
     sup_codes = {s["code"] for s in supervision_list}
 
-    dt, wt, do_, wo = [], [], [], []
-    for s in stocks_data:
-        is_t = s["fiscal_month"] == tm
-        if s["risk"] == "danger": (dt if is_t else do_).append(s)
-        elif s["risk"] == "warning": (wt if is_t else wo).append(s)
+    # 今月・先月・それ以外に分類
+    dt, wt = [], []   # 今月 danger/warning
+    dp, wp = [], []   # 先月 danger/warning
+    do_, wo = [], []  # それ以外 danger/warning
 
-    total = sum(len(x) for x in [dt, wt, do_, wo])
+    for s in stocks_data:
+        fm = s["fiscal_month"]
+        if s["risk"] == "danger":
+            if fm == tm:   dt.append(s)
+            elif fm == pm: dp.append(s)
+            else:          do_.append(s)
+        elif s["risk"] == "warning":
+            if fm == tm:   wt.append(s)
+            elif fm == pm: wp.append(s)
+            else:          wo.append(s)
+
+    total = sum(len(x) for x in [dt, wt, dp, wp, do_, wo])
 
     def row(s):
         code = s["code"]
         cap = f'{s["market_cap"]:,.0f}億円' if s["market_cap"] else "取得不可"
         fi = f'{s["fiscal_month"]}月決算' if s["fiscal_month"] else "不明"
-        dl = f'{s["fiscal_month"]}月{calendar.monthrange(today.year,s["fiscal_month"])[1]}日' if s["fiscal_month"] else "-"
+        dl = (f'{s["fiscal_month"]}月{calendar.monthrange(TODAY.year, s["fiscal_month"])[1]}日'
+              if s["fiscal_month"] else "-")
         sup = '<span class="badge bs">監理中</span>' if code in sup_codes else ""
-        rb = '<span class="badge bd">危険</span>' if s["risk"]=="danger" else '<span class="badge bw">注意</span>'
-        ms = s["market_str"].replace("（内国株式）","").replace("プライム","Prime").replace("スタンダード","Std").replace("グロース","Growth")
-        return f'<tr class="r{s["risk"]}"><td><a href="https://finance.yahoo.co.jp/quote/{code}.T" target="_blank">{code}</a></td><td>{s["name"]}{sup}</td><td>{ms}</td><td class="rc">{cap}</td><td>{fi}</td><td class="rd">{dl}</td><td>{rb}</td></tr>'
+        rb = ('<span class="badge bd">危険</span>' if s["risk"] == "danger"
+              else '<span class="badge bw">注意</span>')
+        ms = (s["market_str"]
+              .replace("（内国株式）", "")
+              .replace("プライム", "Prime")
+              .replace("スタンダード", "Std")
+              .replace("グロース", "Growth"))
+        return (f'<tr class="r{s["risk"]}">'
+                f'<td><a href="https://finance.yahoo.co.jp/quote/{code}.T" target="_blank">{code}</a></td>'
+                f'<td>{s["name"]}{sup}</td><td>{ms}</td>'
+                f'<td class="rc">{cap}</td><td>{fi}</td><td class="rd">{dl}</td><td>{rb}</td></tr>')
 
     def sec(title, items, sid, cls):
         if not items:
-            return f'<section id="{sid}"><h2 class="{cls}">{title}</h2><p class="empty">該当銘柄なし</p></section>'
+            return (f'<section id="{sid}"><h2 class="{cls}">{title}</h2>'
+                    f'<p class="empty">該当銘柄なし</p></section>')
         rows = "".join(row(s) for s in items)
-        return f'<section id="{sid}"><h2 class="{cls}">{title} <span class="cnt">({len(items)}銘柄)</span></h2><div class="tw"><table><thead><tr><th>コード</th><th>銘柄名</th><th>市場</th><th>時価総額</th><th>決算</th><th>基準日</th><th>判定</th></tr></thead><tbody>{rows}</tbody></table></div></section>'
+        return (f'<section id="{sid}"><h2 class="{cls}">{title} '
+                f'<span class="cnt">({len(items)}銘柄)</span></h2>'
+                f'<div class="tw"><table><thead><tr>'
+                f'<th>コード</th><th>銘柄名</th><th>市場</th>'
+                f'<th>時価総額</th><th>決算</th><th>基準日</th><th>判定</th>'
+                f'</tr></thead><tbody>{rows}</tbody></table></div></section>')
 
     sup_html = ""
     if supervision_list:
-        sr = "".join(f'<tr><td>{s["code"]}</td><td>{s["name"]}</td><td><span class="badge {"bd" if s["type"]=="整理" else "bs"}">{s["type"]}ポスト</span></td><td>{s.get("reason","")}</td></tr>' for s in supervision_list)
-        sup_html = f'<section id="sup"><h2 class="csup">🔴 監理・整理ポスト指定中 <span class="cnt">({len(supervision_list)}銘柄)</span></h2><div class="tw"><table><thead><tr><th>コード</th><th>銘柄名</th><th>種別</th><th>理由</th></tr></thead><tbody>{sr}</tbody></table></div></section>'
+        sr = "".join(
+            f'<tr><td>{s["code"]}</td><td>{s["name"]}</td>'
+            f'<td><span class="badge {"bd" if s["type"]=="整理" else "bs"}">{s["type"]}ポスト</span></td>'
+            f'<td>{s.get("reason","")}</td></tr>'
+            for s in supervision_list)
+        sup_html = (f'<section id="sup"><h2 class="csup">🔴 監理・整理ポスト指定中 '
+                    f'<span class="cnt">({len(supervision_list)}銘柄)</span></h2>'
+                    f'<div class="tw"><table><thead><tr>'
+                    f'<th>コード</th><th>銘柄名</th><th>種別</th><th>理由</th>'
+                    f'</tr></thead><tbody>{sr}</tbody></table></div></section>')
+
+    prev_html = ""
+    if pm != tm:
+        prev_html = f"""
+{sec(f"🔴 先月（{pm_ja}が基準日）危険ゾーン", dp, "dp", "cdanger")}
+{sec(f"🟠 先月（{pm_ja}が基準日）注意ゾーン", wp, "wp", "cwarning")}"""
 
     return f"""<!DOCTYPE html>
 <html lang="ja"><head>
@@ -208,17 +232,20 @@ footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px 
 <div class="bar">
 <div><span class="lbl">{tm_ja}基準日・危険</span><span class="num nd">{len(dt)}</span><span class="lbl">銘柄</span></div>
 <div><span class="lbl">{tm_ja}基準日・注意</span><span class="num nw">{len(wt)}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">{pm_ja}基準日・危険</span><span class="num nd">{len(dp)}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">{pm_ja}基準日・注意</span><span class="num nw">{len(wp)}</span><span class="lbl">銘柄</span></div>
 <div><span class="lbl">全月合計</span><span class="num" style="color:#1565c0">{total}</span><span class="lbl">銘柄</span></div>
 </div>
 <div class="notice">⚠️ <strong>免責事項：</strong>時価総額は「会社全体」（株価×発行済株式数）の推定値です。上場維持基準の「流通株式時価総額」とは異なります（流通比率30%仮定の目安）。投資判断の根拠にしないでください。基準日は決算月の月末最終日です。</div>
 <main>
-{sec(f"🔴 {tm_ja}が基準日・危険ゾーン", dt, "dt", "cdanger")}
-{sec(f"🟠 {tm_ja}が基準日・注意ゾーン", wt, "wt", "cwarning")}
+{sec(f"🔴 今月（{tm_ja}が基準日）危険ゾーン", dt, "dt", "cdanger")}
+{sec(f"🟠 今月（{tm_ja}が基準日）注意ゾーン", wt, "wt", "cwarning")}
+{prev_html}
 {sup_html}
-{sec("⚠️ 危険ゾーン（他の月が基準日）", do_, "do", "cdanger")}
-{sec("💛 注意ゾーン（他の月が基準日）", wo, "wo", "cwarning")}
+{sec("⚠️ 危険ゾーン（その他の月が基準日）", do_, "do", "cdanger")}
+{sec("💛 注意ゾーン（その他の月が基準日）", wo, "wo", "cwarning")}
 </main>
-<footer>データ出典：<a href="https://www.jpx.co.jp/markets/statistics-equities/misc/01.html" target="_blank">東証上場銘柄一覧（JPX）</a>、株価：stooq.com、株式数・決算月：Yahoo Finance Japan（非公式）<br>本サイトは個人学習目的で作成されており、投資助言ではありません。</footer>
+<footer>データ出典：<a href="https://www.jpx.co.jp/markets/statistics-equities/misc/01.html" target="_blank">東証上場銘柄一覧（JPX）</a>、株価・株式数・決算月：Yahoo Finance（yfinance）<br>本サイトは個人学習目的で作成されており、投資助言ではありません。</footer>
 </body></html>"""
 
 
@@ -259,8 +286,9 @@ def main():
         })
 
     stocks_data.sort(key=lambda x: (
-        x["fiscal_month"] != TARGET_MONTH,
-        x["risk"] != "danger",
+        0 if x["fiscal_month"] == TARGET_MONTH else
+        1 if x["fiscal_month"] == PREV_MONTH else 2,
+        0 if x["risk"] == "danger" else 1,
         x["market_cap"] or 9999
     ))
 
@@ -268,10 +296,10 @@ def main():
     html = generate_html(stocks_data, supervision, generated_at)
     open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8").write(html)
     json_data = {"generated_at": generated_at, "target_month": TARGET_MONTH,
-                 "stocks": stocks_data, "supervision": supervision}
+                 "prev_month": PREV_MONTH, "stocks": stocks_data, "supervision": supervision}
     open(os.path.join(OUTPUT_DIR, "data.json"), "w", encoding="utf-8").write(
         json.dumps(json_data, ensure_ascii=False, indent=2))
-    print(f"✅ 完了！")
+    print("✅ 完了！")
 
 if __name__ == "__main__":
     main()
