@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       target_month:
-        description: '対象月（例: 3 = 3月決算銘柄を優先表示）空欄=当月'
+        description: '対象月（例: 3）空欄=当月'
         required: false
         default: ''
 
