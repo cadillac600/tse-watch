@@ -6,7 +6,8 @@
 - 指定月の基準日銘柄を優先表示
 """
 
-import os, sys, json, datetime, calendar, time, urllib.request, subprocess
+import os, sys, json, datetime, calendar, time, urllib.request, subprocess, threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 OUTPUT_DIR = "docs"
 CRITERIA = {
@@ -69,18 +70,30 @@ def get_shares_and_fiscal(code):
         return None, None
 
 
+def _fetch_one(code):
+    price = get_price_stooq(code)
+    shares, fiscal_month = get_shares_and_fiscal(code)
+    market_cap = round(price * shares / 1e8, 1) if price and shares else None
+    return code, {"market_cap": market_cap, "fiscal_month": fiscal_month}
+
+
 def fetch_stock_data(codes):
-    print("[2/4] 株価・株式数・決算月を取得中...")
+    print("[2/4] 株価・株式数・決算月を取得中（並列処理）...")
     results = {}
-    for i, code in enumerate(codes):
-        price = get_price_stooq(code)
-        shares, fiscal_month = get_shares_and_fiscal(code)
-        market_cap = round(price * shares / 1e8, 1) if price and shares else None
-        results[code] = {"market_cap": market_cap, "fiscal_month": fiscal_month}
-        if (i+1) % 200 == 0:
-            got = sum(1 for v in results.values() if v["market_cap"])
-            print(f"  → {i+1}/{len(codes)}件（時価総額取得済: {got}件）")
-        time.sleep(0.2)
+    lock = threading.Lock()
+    done_count = [0]
+
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        futures = {executor.submit(_fetch_one, code): code for code in codes}
+        for future in as_completed(futures):
+            code, data = future.result()
+            with lock:
+                results[code] = data
+                done_count[0] += 1
+                if done_count[0] % 200 == 0:
+                    got = sum(1 for v in results.values() if v["market_cap"])
+                    print(f"  → {done_count[0]}/{len(codes)}件（時価総額取得済: {got}件）")
+
     got = sum(1 for v in results.values() if v["market_cap"])
     print(f"  → 完了: {got}/{len(codes)}件取得")
     return results
