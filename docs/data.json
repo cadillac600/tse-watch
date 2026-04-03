@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年4月3日 07:43",
+  "generated_at": "2026年4月3日 08:17",
   "target_month": 4,
   "prev_month": 3,
   "stocks": [
@@ -265,10 +265,10 @@
       "code": "2335",
       "name": "キューブシステム",
       "market_str": "プライム（内国株式）",
-      "total_cap": 156.0,
+      "total_cap": 157.2,
       "float_cap": null,
       "float_ratio": null,
-      "eff_float_cap": 46.8,
+      "eff_float_cap": 47.2,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1612,23 +1612,6 @@
       "sup_type": ""
     },
     {
-      "code": "3679",
-      "name": "じげん",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 410.6,
-      "float_cap": 185.8,
-      "float_ratio": 45.3,
-      "eff_float_cap": 185.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価186億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2922",
       "name": "なとり",
       "market_str": "プライム（内国株式）",
@@ -1746,23 +1729,6 @@
         "流通比率24% < 基準35%"
       ],
       "sup_type": ""
-    },
-    {
-      "code": "3681",
-      "name": "ブイキューブ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 12.2,
-      "float_cap": 9.5,
-      "float_ratio": 78.3,
-      "eff_float_cap": 9.5,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億 < 基準100億"
-      ],
-      "sup_type": "監理"
     },
     {
       "code": "2164",
