@@ -74,7 +74,7 @@ def get_fiscal_month_kabutan(code):
     return None
 
 def get_stock_info(code):
-    """yfinance で株価・株式数・決算月を1件取得"""
+    """yfinance で株価・株式数・決算月・上場日を1件取得"""
     import yfinance as yf
     try:
         info = yf.Ticker(f"{code}.T").info
@@ -89,9 +89,13 @@ def get_stock_info(code):
             if ts and isinstance(ts, (int, float)) and ts > 0:
                 fiscal_month = datetime.datetime.utcfromtimestamp(ts).month
                 break
-        return price, shares, fiscal_month
+        # 上場日（グロース10年ルール判定用）
+        listing_ts = info.get("firstTradeDateEpochUtc")
+        listing_date = (datetime.date.fromtimestamp(listing_ts)
+                        if listing_ts and listing_ts > 0 else None)
+        return price, shares, fiscal_month, listing_date
     except Exception:
-        return None, None, None
+        return None, None, None, None
 
 
 def fetch_stock_data(codes):
@@ -102,19 +106,19 @@ def fetch_stock_data(codes):
     done = [0]
 
     def fetch_yf(code):
-        price, shares, fiscal_month = get_stock_info(code)
+        price, shares, fiscal_month, listing_date = get_stock_info(code)
         # yfinanceで取れなければキャッシュを使う
         if fiscal_month is None and code in fiscal_cache:
             fiscal_month = fiscal_cache[code]
         market_cap = round(price * shares / 1e8, 1) if price and shares else None
-        return code, market_cap, fiscal_month
+        return code, market_cap, fiscal_month, listing_date
 
     with ThreadPoolExecutor(max_workers=15) as executor:
         futures = {executor.submit(fetch_yf, code): code for code in codes}
         for future in as_completed(futures):
-            code, mc, fm = future.result()
+            code, mc, fm, ld = future.result()
             with lock:
-                raw[code] = {"market_cap": mc, "fiscal_month": fm}
+                raw[code] = {"market_cap": mc, "fiscal_month": fm, "listing_date": ld}
                 done[0] += 1
                 if done[0] % 500 == 0:
                     got_mc = sum(1 for v in raw.values() if v["market_cap"])
@@ -150,36 +154,82 @@ def fetch_stock_data(codes):
 
     got_mc = sum(1 for v in raw.values() if v["market_cap"])
     got_fm = sum(1 for v in raw.values() if v["fiscal_month"])
-    print(f"  → 完了: 時価総額{got_mc}件, 決算月{got_fm}件")
+    got_ld = sum(1 for v in raw.values() if v.get("listing_date"))
+    print(f"  → 完了: 時価総額{got_mc}件, 決算月{got_fm}件, 上場日{got_ld}件")
     return {code: raw[code] for code in codes}
 
 
 def fetch_supervision_list():
+    import pandas as pd
     print("[3/4] 監理・整理ポスト情報を取得中...")
-    import re
-    for url in [
-        "https://www.jpx.co.jp/rules-participants/rules/supervision/index.html",
-        "https://www.jpx.co.jp/listing/maintenance/supervision/index.html",
-    ]:
+    result = []
+    pages = [
+        ("https://www.jpx.co.jp/listing/maintenance/supervision/index.html", "監理"),
+        ("https://www.jpx.co.jp/listing/maintenance/seiri/index.html",        "整理"),
+    ]
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Accept-Language": "ja,en-US;q=0.7",
+        "Referer": "https://www.jpx.co.jp/listing/",
+    }
+    for url, post_type in pages:
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=15) as resp:
-                html = resp.read().decode("utf-8", errors="replace")
-            result = []
-            for row in re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL):
-                cells = [re.sub(r'<[^>]+>', '', c).strip()
-                         for c in re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL)]
-                if len(cells) >= 2:
-                    code = re.sub(r'\D', '', cells[0])[:4]
-                    if re.match(r'^\d{4}$', code):
-                        result.append({"code": code, "name": cells[1],
-                                       "type": "整理" if "整理" in row else "監理",
-                                       "reason": cells[2] if len(cells) > 2 else ""})
-            if result:
-                print(f"  → {len(result)}件取得")
-                return result
+                html_content = resp.read().decode("utf-8", errors="replace")
+            page_result = []
+            # pandas.read_html でテーブルを解析（lxml使用）
+            try:
+                tables = pd.read_html(html_content)
+                for df in tables:
+                    for col in df.columns:
+                        series = df[col].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+                        if series.str.match(r'^\d{4}$').sum() >= 3:
+                            col_idx = list(df.columns).index(col)
+                            name_col = (df.columns[col_idx + 1]
+                                        if col_idx + 1 < len(df.columns) else None)
+                            for _, row in df.iterrows():
+                                code = str(row[col]).strip().replace('.0', '')
+                                if re.match(r'^\d{4}$', code):
+                                    name = str(row[name_col]).strip() if name_col else ""
+                                    page_result.append({
+                                        "code": code, "name": name,
+                                        "type": post_type, "reason": ""
+                                    })
+                            break
+            except Exception:
+                pass
+            # フォールバック: regex でテーブル行を解析
+            if not page_result:
+                for row_html in re.findall(r'<tr[^>]*>(.*?)</tr>', html_content, re.DOTALL):
+                    cells = [re.sub(r'<[^>]+>', '', c).strip()
+                             for c in re.findall(r'<td[^>]*>(.*?)</td>', row_html, re.DOTALL)]
+                    if not cells:
+                        continue
+                    for i, cell in enumerate(cells[:3]):
+                        m = re.search(r'\b(\d{4})\b', cell)
+                        if m:
+                            code = m.group(1)
+                            name = cells[i + 1] if i + 1 < len(cells) else ""
+                            page_result.append({
+                                "code": code, "name": name,
+                                "type": post_type, "reason": ""
+                            })
+                            break
+            if page_result:
+                print(f"  → {post_type}: {len(page_result)}件取得")
+                result.extend(page_result)
         except Exception as e:
-            print(f"  → 失敗: {e}")
+            print(f"  → {post_type}ページ取得失敗: {e}")
+    # 重複除去
+    seen, unique = set(), []
+    for s in result:
+        if s["code"] not in seen:
+            seen.add(s["code"])
+            unique.append(s)
+    if unique:
+        return unique
     print("  → 空リストで続行")
     return []
 
@@ -209,6 +259,8 @@ def generate_html(stocks_data, supervision_list, generated_at):
         sup = '<span class="badge bs">監理中</span>' if code in sup_codes else ""
         rb = ('<span class="badge bd">危険</span>' if s["risk"] == "danger"
               else '<span class="badge bw">注意</span>')
+        if s.get("growth_10yr") and s.get("listing_years"):
+            rb += f'<span class="badge bg10">上場{s["listing_years"]:.0f}年超40億ルール</span>'
         ms = (s["market_str"]
               .replace("（内国株式）", "")
               .replace("プライム", "Prime")
@@ -323,7 +375,7 @@ tr:last-child td{{border-bottom:none}}
 .rc{{text-align:right}}.rd{{font-weight:600;color:#d32f2f}}
 a{{color:#1565c0;text-decoration:none}}a:hover{{text-decoration:underline}}
 .badge{{display:inline-block;font-size:10px;padding:2px 6px;border-radius:3px;margin-left:4px;font-weight:600;vertical-align:middle}}
-.bd{{background:#d32f2f;color:#fff}}.bw{{background:#f57c00;color:#fff}}.bs{{background:#880e4f;color:#fff}}
+.bd{{background:#d32f2f;color:#fff}}.bw{{background:#f57c00;color:#fff}}.bs{{background:#880e4f;color:#fff}}.bg10{{background:#6a1b9a;color:#fff}}
 .empty{{padding:16px;background:#fff;border:1px solid #e0e0e0;border-top:none;color:#999;font-size:13px}}
 footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px solid #e0e0e0;margin-top:40px}}
 /* タブ */
@@ -400,6 +452,31 @@ def main():
     cap_data = fetch_stock_data(codes)
     supervision = fetch_supervision_list()
 
+    def calc_risk(key, market_cap, listing_date):
+        """市場区分・時価総額・上場日からリスク判定。(risk, growth_10yr, listing_years) を返す"""
+        c = CRITERIA[key]
+        base_risk = ("danger" if market_cap < c["danger"]
+                     else "warning" if market_cap < c["warning"] else None)
+        if key != "グロース" or listing_date is None:
+            return base_risk, False, None
+        # グロース: 上場10年以上は「会社全体時価総額40億円以上」も必要
+        years = (TODAY - listing_date).days / 365.25
+        listing_years = round(years, 1)
+        if years < 10:
+            return base_risk, False, listing_years
+        # 10年以上: より厳しい方を採用
+        if market_cap < 40:
+            return "danger", True, listing_years
+        elif market_cap < 80:
+            ten_risk = "warning"
+        else:
+            ten_risk = None
+        # base_risk と ten_risk で厳しい方
+        order = {None: 0, "warning": 1, "danger": 2}
+        risk = max([base_risk, ten_risk], key=lambda r: order.get(r, 0))
+        is_10yr = (ten_risk is not None and order.get(ten_risk, 0) >= order.get(base_risk, 0))
+        return risk, is_10yr, listing_years
+
     stocks_data = []
     for _, row_data in df.iterrows():
         code = row_data["コード"]
@@ -407,6 +484,7 @@ def main():
         info = cap_data.get(code, {})
         market_cap = info.get("market_cap")
         fiscal_month = info.get("fiscal_month")
+        listing_date = info.get("listing_date")
 
         key = ("プライム" if "プライム" in market_str
                else "スタンダード" if "スタンダード" in market_str
@@ -414,9 +492,7 @@ def main():
         if not key or market_cap is None:
             continue
 
-        c = CRITERIA[key]
-        risk = ("danger" if market_cap < c["danger"]
-                else "warning" if market_cap < c["warning"] else None)
+        risk, growth_10yr, listing_years = calc_risk(key, market_cap, listing_date)
         if not risk:
             continue
 
@@ -424,6 +500,8 @@ def main():
             "code": code, "name": row_data["銘柄名"],
             "market_str": market_str, "market_cap": market_cap,
             "fiscal_month": fiscal_month, "risk": risk,
+            "growth_10yr": growth_10yr,
+            "listing_years": listing_years,
         })
 
     stocks_data.sort(key=lambda x: (
