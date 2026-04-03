@@ -230,12 +230,24 @@ def _scrape_jpx_alert_page(url, post_type, pd_module):
                 series = df[col].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
                 if series.str.match(r'^\d{4}$').sum() >= 3:
                     col_idx = list(df.columns).index(col)
-                    name_col = (df.columns[col_idx + 1]
-                                if col_idx + 1 < len(df.columns) else None)
+                    # 銘柄名列: コード列の前後を調べ、数字や市場名でない列を選ぶ
+                    market_keywords = {"プライム", "スタンダード", "グロース", "市場", "nan"}
+                    def is_name_col(c):
+                        vals = df[c].astype(str).str.strip().tolist()
+                        non_num = [v for v in vals if not re.match(r'^[\d\.]+$', v) and v != "nan"]
+                        suspicious = sum(1 for v in non_num if v in market_keywords)
+                        return len(non_num) > 0 and suspicious / max(len(non_num), 1) < 0.5
+                    name_col = None
+                    if col_idx > 0 and is_name_col(df.columns[col_idx - 1]):
+                        name_col = df.columns[col_idx - 1]
+                    elif col_idx + 1 < len(df.columns) and is_name_col(df.columns[col_idx + 1]):
+                        name_col = df.columns[col_idx + 1]
                     for _, row in df.iterrows():
                         code = str(row[col]).strip().replace('.0', '')
                         if re.match(r'^\d{4}$', code):
                             name = str(row[name_col]).strip() if name_col else ""
+                            if name in ("nan", "None"):
+                                name = ""
                             result.append({"code": code, "name": name,
                                            "type": post_type, "reason": ""})
                     break
@@ -480,12 +492,17 @@ def generate_html(stocks_data, supervision_list, generated_at):
         n_seiri = sum(1 for x in supervision_list if x["type"] == "整理")
         n_kp    = sum(1 for x in supervision_list if x["type"] == "改善期間")
         sup_html = (
-            f'<section id="sup"><h2 class="csup">'
-            f'🔴 監理・整理・改善期間 指定銘柄 '
-            f'<span class="cnt">（監理{n_kanri}・整理{n_seiri}・改善期間{n_kp} / 計{len(supervision_list)}銘柄）</span></h2>'
+            f'<section id="sup">'
+            f'<details class="sup-details">'
+            f'<summary class="sup-summary csup">'
+            f'🔴 監理・整理・改善期間 指定銘柄'
+            f'<span class="cnt">（監理{n_kanri}・整理{n_seiri}・改善期間{n_kp} / 計{len(supervision_list)}銘柄）</span>'
+            f'<span class="sup-hint">▼ クリックで一覧を表示</span>'
+            f'</summary>'
             f'<div class="tw"><table><thead><tr>'
             f'<th>コード</th><th>銘柄名</th><th>種別</th><th>理由</th>'
-            f'</tr></thead><tbody>{sr}</tbody></table></div></section>')
+            f'</tr></thead><tbody>{sr}</tbody></table></div>'
+            f'</details></section>')
 
     tm_d = len(by_month[tm]["danger"])
     tm_w = len(by_month[tm]["warning"])
@@ -548,6 +565,16 @@ footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px 
 .tsec{{margin-top:20px}}
 .tab-legend{{display:flex;gap:16px;padding:10px 24px;font-size:11px;color:#888;
              background:#fff;border-bottom:1px solid #eee;flex-wrap:wrap}}
+/* 監理一覧アコーディオン */
+.sup-details{{border-radius:6px;overflow:hidden}}
+.sup-summary{{list-style:none;cursor:pointer;padding:10px 14px;border-radius:6px 6px 0 0;
+              display:flex;align-items:center;gap:8px;flex-wrap:wrap;user-select:none}}
+.sup-summary::-webkit-details-marker{{display:none}}
+.sup-summary::marker{{display:none}}
+.sup-hint{{font-size:11px;font-weight:400;color:#c2185b;margin-left:auto}}
+.sup-details[open] .sup-hint{{display:none}}
+.sup-details[open] .sup-summary{{border-radius:6px 6px 0 0}}
+.sup-details:not([open]) table{{display:none}}
 </style></head><body>
 <header>
 <div><h1>📊 東証 上場維持基準 監視サイト</h1>
@@ -621,6 +648,16 @@ def main():
     cap_data   = fetch_stock_data(codes)
     supervision = fetch_supervision_list()
 
+    # JPX銘柄一覧から コード→銘柄名 の辞書を作成
+    name_lookup = dict(zip(df["コード"].astype(str), df["銘柄名"].astype(str)))
+    # 監理リストの銘柄名をJPX一覧で補完（スクレイピングで市場名が入った場合の修正）
+    market_kw = {"プライム", "スタンダード", "グロース", "市場", "nan", ""}
+    for s in supervision:
+        if s["name"] in market_kw or not s["name"]:
+            s["name"] = name_lookup.get(s["code"], "")
+
+    sup_map_main = {s["code"]: s for s in supervision}
+
     stocks_data = []
     for _, row_data in df.iterrows():
         code       = row_data["コード"]
@@ -643,6 +680,7 @@ def main():
         if not risk:
             continue
 
+        sup_type = sup_map_main.get(code, {}).get("type", "")
         stocks_data.append({
             "code": code, "name": row_data["銘柄名"],
             "market_str": market_str,
@@ -650,13 +688,18 @@ def main():
             "float_ratio": float_ratio, "eff_float_cap": eff_fc,
             "fiscal_month": fiscal_month, "risk": risk,
             "growth_10yr": growth_10yr, "listing_years": listing_years,
-            "reasons": reasons,
+            "reasons": reasons, "sup_type": sup_type,
         })
+
+    def sup_order(x):
+        t = x.get("sup_type", "")
+        return 0 if t == "整理" else 1 if t == "監理" else 2 if t == "改善期間" else 3
 
     stocks_data.sort(key=lambda x: (
         0 if x["fiscal_month"] == TARGET_MONTH else
         1 if x["fiscal_month"] == PREV_MONTH else 2,
         0 if x["risk"] == "danger" else 1,
+        sup_order(x),
         x["eff_float_cap"] or 9999
     ))
 
