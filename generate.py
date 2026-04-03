@@ -5,10 +5,11 @@
 - 今月・先月の基準日銘柄を優先表示
 """
 
-import os, sys, json, datetime, calendar, urllib.request, subprocess, threading
+import os, sys, json, datetime, calendar, re, urllib.request, subprocess, threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 OUTPUT_DIR = "docs"
+FISCAL_CACHE_FILE = os.path.join(OUTPUT_DIR, "fiscal_cache.json")
 CRITERIA = {
     "プライム":    {"danger": 150, "warning": 333},
     "スタンダード": {"danger": 15,  "warning": 33},
@@ -39,6 +40,39 @@ def fetch_stock_list():
     return df
 
 
+def load_fiscal_cache():
+    """決算月キャッシュを読み込む"""
+    try:
+        with open(FISCAL_CACHE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def save_fiscal_cache(cache):
+    """決算月キャッシュを保存する"""
+    try:
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        with open(FISCAL_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False)
+    except Exception:
+        pass
+
+def get_fiscal_month_kabutan(code):
+    """株探から決算月をスクレイピング（yfinanceの補完用）"""
+    try:
+        url = f"https://kabutan.jp/stock/?code={code}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+        m = re.search(r'決算[期月][^\d]*?(\d{1,2})\s*月', html)
+        if m:
+            month = int(m.group(1))
+            if 1 <= month <= 12:
+                return month
+    except Exception:
+        pass
+    return None
+
 def get_stock_info(code):
     """yfinance で株価・株式数・決算月を1件取得"""
     import yfinance as yf
@@ -48,39 +82,76 @@ def get_stock_info(code):
                  or info.get("regularMarketPrice")
                  or info.get("previousClose"))
         shares = info.get("sharesOutstanding")
-        fiscal_ts = info.get("fiscalYearEnd")
-        fiscal_month = (datetime.datetime.utcfromtimestamp(fiscal_ts).month
-                        if fiscal_ts else None)
+        # 決算月: 複数フィールドを試す
+        fiscal_month = None
+        for field in ("fiscalYearEnd", "lastFiscalYearEnd", "nextFiscalYearEnd"):
+            ts = info.get(field)
+            if ts and isinstance(ts, (int, float)) and ts > 0:
+                fiscal_month = datetime.datetime.utcfromtimestamp(ts).month
+                break
         return price, shares, fiscal_month
     except Exception:
         return None, None, None
 
 
 def fetch_stock_data(codes):
-    print("[2/4] 株価・株式数・決算月を並列取得中（yfinance / 15ワーカー）...")
-    results = {}
+    print("[2/4] 株価・株式数をyfinanceで並列取得中（15ワーカー）...")
+    fiscal_cache = load_fiscal_cache()
+    raw = {}
     lock = threading.Lock()
     done = [0]
 
-    def fetch_one(code):
+    def fetch_yf(code):
         price, shares, fiscal_month = get_stock_info(code)
+        # yfinanceで取れなければキャッシュを使う
+        if fiscal_month is None and code in fiscal_cache:
+            fiscal_month = fiscal_cache[code]
         market_cap = round(price * shares / 1e8, 1) if price and shares else None
-        return code, {"market_cap": market_cap, "fiscal_month": fiscal_month}
+        return code, market_cap, fiscal_month
 
     with ThreadPoolExecutor(max_workers=15) as executor:
-        futures = {executor.submit(fetch_one, code): code for code in codes}
+        futures = {executor.submit(fetch_yf, code): code for code in codes}
         for future in as_completed(futures):
-            code, data = future.result()
+            code, mc, fm = future.result()
             with lock:
-                results[code] = data
+                raw[code] = {"market_cap": mc, "fiscal_month": fm}
                 done[0] += 1
                 if done[0] % 500 == 0:
-                    got = sum(1 for v in results.values() if v["market_cap"])
-                    print(f"  → {done[0]}/{len(codes)}件（時価総額取得済: {got}件）")
+                    got_mc = sum(1 for v in raw.values() if v["market_cap"])
+                    got_fm = sum(1 for v in raw.values() if v["fiscal_month"])
+                    print(f"  → {done[0]}/{len(codes)}件 (時価総額:{got_mc} 決算月:{got_fm})")
 
-    got = sum(1 for v in results.values() if v["market_cap"])
-    print(f"  → 完了: {got}/{len(codes)}件取得")
-    return results
+    # 決算月が不明な銘柄を株探で補完
+    missing = [c for c in codes if raw[c]["fiscal_month"] is None]
+    if missing:
+        print(f"  → 株探で決算月を補完中（{len(missing)}件 / 10ワーカー）...")
+        done[0] = 0
+        new_cache_entries = {}
+
+        def fetch_kabutan(code):
+            return code, get_fiscal_month_kabutan(code)
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = {executor.submit(fetch_kabutan, c): c for c in missing}
+            for future in as_completed(futures):
+                code, fm = future.result()
+                with lock:
+                    if fm is not None:
+                        raw[code]["fiscal_month"] = fm
+                        new_cache_entries[code] = fm
+                    done[0] += 1
+                    if done[0] % 300 == 0:
+                        print(f"  → 株探 {done[0]}/{len(missing)}件")
+
+        if new_cache_entries:
+            fiscal_cache.update(new_cache_entries)
+            save_fiscal_cache(fiscal_cache)
+            print(f"  → キャッシュ更新: {len(new_cache_entries)}件追加")
+
+    got_mc = sum(1 for v in raw.values() if v["market_cap"])
+    got_fm = sum(1 for v in raw.values() if v["fiscal_month"])
+    print(f"  → 完了: 時価総額{got_mc}件, 決算月{got_fm}件")
+    return {code: raw[code] for code in codes}
 
 
 def fetch_supervision_list():
