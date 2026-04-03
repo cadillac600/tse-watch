@@ -1,6 +1,1120 @@
 {
-  "generated_at": "2026年4月2日 06:49",
-  "target_month": 3,
-  "stocks": [],
+  "generated_at": "2026年4月3日 01:55",
+  "target_month": 4,
+  "prev_month": 3,
+  "stocks": [
+    {
+      "code": "2721",
+      "name": "ジェイホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 11.7,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3681",
+      "name": "ブイキューブ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 12.4,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3787",
+      "name": "テクノマセマティカル",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 13.0,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "1382",
+      "name": "ホーブ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 13.1,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 13.7,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3370",
+      "name": "フジタコーポレーション",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.0,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2778",
+      "name": "パレモ・ホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.1,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2673",
+      "name": "夢みつけ隊",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.3,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3174",
+      "name": "ハピネス・アンド・ディ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.4,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3223",
+      "name": "エスエルディー",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.6,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3111",
+      "name": "オーミケンシ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.7,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2156",
+      "name": "セーラー広告",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 14.9,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2491",
+      "name": "バリューコマース",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 98.0,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "1433",
+      "name": "ベステラ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 104.4,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3657",
+      "name": "ポールトゥウィンホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 106.1,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "1873",
+      "name": "日本ハウスホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 128.0,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2410",
+      "name": "キャリアデザインセンター",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 130.8,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2307",
+      "name": "クロスキャット",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 135.1,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3031",
+      "name": "ラクーンホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 135.8,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "2130",
+      "name": "メンバーズ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 137.4,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3109",
+      "name": "シキボウ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 137.5,
+      "fiscal_month": null,
+      "risk": "danger"
+    },
+    {
+      "code": "3416",
+      "name": "ピクスタ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 15.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3639",
+      "name": "ボルテージ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 15.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3634",
+      "name": "ソケッツ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 15.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2459",
+      "name": "アウンコンサルティング",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 15.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3624",
+      "name": "アクセルマーク",
+      "market_str": "グロース（内国株式）",
+      "market_cap": 15.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3802",
+      "name": "エコミック",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 16.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3779",
+      "name": "ジェイ・エスコムホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 17.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3089",
+      "name": "テクノアルファ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 18.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3753",
+      "name": "フライトソリューションズ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 18.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2479",
+      "name": "ジェイテック",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 19.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2291",
+      "name": "福留ハム",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 20.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3192",
+      "name": "白鳩",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 21.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3670",
+      "name": "協立情報通信",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 21.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3042",
+      "name": "セキュアヴェイル",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 22.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2666",
+      "name": "オートウェーブ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 22.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3375",
+      "name": "ＺＯＡ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 22.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2736",
+      "name": "フェスタリアホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 23.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3600",
+      "name": "フジックス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 23.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3559",
+      "name": "ピーバンドットコム",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 23.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3598",
+      "name": "山喜",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2687",
+      "name": "シー・ヴイ・エス・ベイエリア",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3041",
+      "name": "ビューティカダンホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2164",
+      "name": "地域新聞社",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2435",
+      "name": "シダー",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3054",
+      "name": "ハイパー",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 24.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3667",
+      "name": "ｅｎｉｓｈ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 25.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2683",
+      "name": "魚喜",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 25.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2300",
+      "name": "きょくとう",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 25.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2789",
+      "name": "カルラ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 26.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3494",
+      "name": "マリオン",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 28.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2667",
+      "name": "イメージ　ワン",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 28.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3248",
+      "name": "アールエイジ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 28.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2425",
+      "name": "ケアサービス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 28.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2872",
+      "name": "セイヒョー",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 28.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2499",
+      "name": "日本和装ホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3071",
+      "name": "ストリーム",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1711",
+      "name": "ＳＤＳホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3326",
+      "name": "ランシステム",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2693",
+      "name": "ＹＫＴ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3306",
+      "name": "日本製麻",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2722",
+      "name": "ＩＫホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 29.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2351",
+      "name": "ＡＳＪ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 30.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3372",
+      "name": "関門海",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 30.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3647",
+      "name": "アスリナ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 30.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3045",
+      "name": "カワサキ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 30.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3577",
+      "name": "東海染工",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3439",
+      "name": "三ツ知",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3011",
+      "name": "バナーズ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1724",
+      "name": "シンクレイヤ",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3177",
+      "name": "ありがとうサービス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1788",
+      "name": "三東工業社",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 31.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3409",
+      "name": "北紡",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 32.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2424",
+      "name": "ブラス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 32.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3607",
+      "name": "クラウディアホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 32.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3627",
+      "name": "テクミラホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "market_cap": 32.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2935",
+      "name": "ピックルスホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 152.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3665",
+      "name": "エニグモ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 153.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2335",
+      "name": "キューブシステム",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 155.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3834",
+      "name": "朝日ネット",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 168.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3696",
+      "name": "セレス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 168.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2930",
+      "name": "北の達人コーポレーション",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 174.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3415",
+      "name": "ＴＯＫＹＯ　ＢＡＳＥ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 174.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3662",
+      "name": "エイチームホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 182.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3835",
+      "name": "ｅＢＡＳＥ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 182.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3501",
+      "name": "ＳＵＭＩＮＯＥ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 186.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3154",
+      "name": "メディアスホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 190.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3676",
+      "name": "デジタルハーツホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 191.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3180",
+      "name": "ビューティガレージ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 196.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3649",
+      "name": "ファインデックス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 201.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2378",
+      "name": "ルネサンス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 202.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2471",
+      "name": "エスプール",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 203.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2929",
+      "name": "ファーマフーズ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 205.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2163",
+      "name": "アルトナー",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 207.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2982",
+      "name": "ＡＤワークスグループ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 211.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2884",
+      "name": "ヨシムラ・フード・ホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 215.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3276",
+      "name": "ＪＰＭＣ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 221.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3457",
+      "name": "Ａｎｄ　Ｄｏホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 221.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2301",
+      "name": "学情",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 221.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1429",
+      "name": "日本アクア",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 227.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3788",
+      "name": "ＧＭＯグローバルサイン・ホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 228.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2266",
+      "name": "六甲バター",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 228.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2882",
+      "name": "イートアンドホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 228.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3694",
+      "name": "オプティム",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 236.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2804",
+      "name": "ブルドックソース",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 236.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2198",
+      "name": "アイ・ケイ・ケイホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 238.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1726",
+      "name": "ビーアールホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 238.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3179",
+      "name": "シュッピン",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 238.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2922",
+      "name": "なとり",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 240.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2933",
+      "name": "紀文食品",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 240.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3678",
+      "name": "メディアドゥ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 243.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3837",
+      "name": "アドソル日進",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 246.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2533",
+      "name": "オエノンホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 246.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2120",
+      "name": "ＬＩＦＵＬＬ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 253.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3853",
+      "name": "アステリア",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 256.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3393",
+      "name": "スターティアホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 257.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3388",
+      "name": "明治電機工業",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 262.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3656",
+      "name": "ＫＬａｂ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 267.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3199",
+      "name": "綿半ホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 274.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3548",
+      "name": "バロックジャパンリミテッド",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 274.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2294",
+      "name": "柿安本店",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 280.3,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2674",
+      "name": "ハードオフコーポレーション",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 283.9,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3771",
+      "name": "システムリサーチ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 287.6,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1780",
+      "name": "ヤマウラ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 290.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2475",
+      "name": "ＷＤＢホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 295.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2753",
+      "name": "あみやき亭",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 295.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2461",
+      "name": "ファンコミュニケーションズ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 296.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3741",
+      "name": "セック",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 301.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2148",
+      "name": "アイティメディア",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 304.2,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3580",
+      "name": "小松マテーレ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 305.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "1964",
+      "name": "中外炉工業",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 308.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3040",
+      "name": "ソリトンシステムズ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 309.8,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2462",
+      "name": "ライク",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 310.1,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2217",
+      "name": "モロゾフ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 310.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2209",
+      "name": "井村屋グループ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 312.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2153",
+      "name": "Ｅ・Ｊホールディングス",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 321.0,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "3486",
+      "name": "グローバル・リンク・マネジメント",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 322.7,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2915",
+      "name": "ケンコーマヨネーズ",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 325.4,
+      "fiscal_month": null,
+      "risk": "warning"
+    },
+    {
+      "code": "2359",
+      "name": "コア",
+      "market_str": "プライム（内国株式）",
+      "market_cap": 328.5,
+      "fiscal_month": null,
+      "risk": "warning"
+    }
+  ],
   "supervision": []
 }
