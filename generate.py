@@ -187,15 +187,40 @@ def fetch_stock_data(codes):
 # ── 監理ポスト・改善期間 取得 ─────────────────────────
 def _scrape_jpx_alert_page(url, post_type, pd_module):
     """JPXの監理/改善期間ページをスクレイピング"""
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
-        "Accept-Language": "ja,en-US;q=0.7",
-        "Referer": "https://www.jpx.co.jp/listing/",
-    }
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        html = resp.read().decode("utf-8", errors="replace")
+    ua_list = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+        "Mozilla/5.0 (X11; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0",
+    ]
+    html = None
+    for ua in ua_list:
+        try:
+            headers = {
+                "User-Agent": ua,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "ja,en-US;q=0.7,en;q=0.3",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Connection": "keep-alive",
+                "Referer": "https://www.jpx.co.jp/listing/market-alerts/",
+                "Cache-Control": "no-cache",
+            }
+            req = urllib.request.Request(url, headers=headers)
+            import ssl
+            ctx = ssl.create_default_context()
+            with urllib.request.urlopen(req, timeout=20, context=ctx) as resp:
+                raw = resp.read()
+                # gzip対応
+                import gzip as gz
+                if resp.info().get("Content-Encoding") == "gzip":
+                    raw = gz.decompress(raw)
+                html = raw.decode("utf-8", errors="replace")
+            if html and len(html) > 1000:
+                break
+        except Exception as e:
+            print(f"    [試行失敗 {ua[:30]}]: {e}")
+            html = None
+    if not html:
+        raise Exception("全UA試行失敗")
     result = []
     # pandas.read_html 優先
     try:
@@ -216,18 +241,22 @@ def _scrape_jpx_alert_page(url, post_type, pd_module):
                     break
     except Exception:
         pass
-    # regex フォールバック
+    # regex フォールバック（年数誤検知を防ぐため「年」「/」直後は除外）
     if not result:
         for row_html in re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL):
             cells = [re.sub(r'<[^>]+>', '', c).strip()
                      for c in re.findall(r'<td[^>]*>(.*?)</td>', row_html, re.DOTALL)]
             for i, cell in enumerate(cells[:3]):
-                m = re.search(r'\b(\d{4})\b', cell)
+                # 4桁数字が「年」「/」「.」で続かない = 銘柄コードとみなす
+                m = re.search(r'(?<!\d)(\d{4})(?!\d)(?![\s]*[年/\.])', cell)
                 if m:
-                    result.append({"code": m.group(1),
-                                   "name": cells[i + 1] if i + 1 < len(cells) else "",
-                                   "type": post_type, "reason": ""})
-                    break
+                    code = m.group(1)
+                    # 1000-9999 の範囲のみ（年数 1900-2099 を除外）
+                    if 1000 <= int(code) <= 9999 and not (1900 <= int(code) <= 2099):
+                        result.append({"code": code,
+                                       "name": cells[i + 1] if i + 1 < len(cells) else "",
+                                       "type": post_type, "reason": ""})
+                        break
     return result
 
 
@@ -354,7 +383,7 @@ def generate_html(stocks_data, supervision_list, generated_at):
         sup_info = sup_map.get(code)
         sup_badge = ""
         if sup_info:
-            type_map = {"監理": ("bs2", "監理中"), "整理": ("bd", "整理中"),
+            type_map = {"監理": ("bs2", "監理中"), "整理": ("bsr", "整理中"),
                         "改善期間": ("bkp", "改善期間中")}
             cls, lbl = type_map.get(sup_info["type"], ("bs2", sup_info["type"]))
             sup_badge = f'<span class="badge {cls}">{lbl}</span>'
@@ -408,11 +437,9 @@ def generate_html(stocks_data, supervision_list, generated_at):
         badges  = ""
         if d: badges += f'<span class="tbadge tbd">{len(d)}</span>'
         if w: badges += f'<span class="tbadge tbw">{len(w)}</span>'
-        hl     = ('data-hl="cur"' if m == tm else
-                  'data-hl="prev"' if m == pm else "")
         active = " active" if m == tm else ""
         tab_btns.append(
-            f'<button class="tab{active}" onclick="showTab({m})" id="tbtn-{m}" {hl}>'
+            f'<button class="tab{active}" onclick="showTab({m})" id="tbtn-{m}">'
             f'{m}月{badges}</button>')
         tab_panels.append(
             f'<div class="tab-panel{active}" id="panel-{m}">{month_panel(m)}</div>')
@@ -435,7 +462,7 @@ def generate_html(stocks_data, supervision_list, generated_at):
     # 監理ポスト一覧セクション
     sup_html = ""
     if supervision_list:
-        type_map = {"監理": ("bd", "監理ポスト"), "整理": ("bd", "整理ポスト"),
+        type_map = {"監理": ("bs2", "監理ポスト"), "整理": ("bsr", "整理ポスト"),
                     "改善期間": ("bkp", "改善期間中")}
 
         def sup_badge_html(t):
@@ -450,11 +477,12 @@ def generate_html(stocks_data, supervision_list, generated_at):
             f'<td>{s.get("reason","")}</td></tr>'
             for s in supervision_list)
         n_kanri = sum(1 for x in supervision_list if x["type"] == "監理")
+        n_seiri = sum(1 for x in supervision_list if x["type"] == "整理")
         n_kp    = sum(1 for x in supervision_list if x["type"] == "改善期間")
         sup_html = (
             f'<section id="sup"><h2 class="csup">'
             f'🔴 監理・整理・改善期間 指定銘柄 '
-            f'<span class="cnt">（監理{n_kanri}・改善期間{n_kp} / 計{len(supervision_list)}銘柄）</span></h2>'
+            f'<span class="cnt">（監理{n_kanri}・整理{n_seiri}・改善期間{n_kp} / 計{len(supervision_list)}銘柄）</span></h2>'
             f'<div class="tw"><table><thead><tr>'
             f'<th>コード</th><th>銘柄名</th><th>種別</th><th>理由</th>'
             f'</tr></thead><tbody>{sr}</tbody></table></div></section>')
@@ -468,6 +496,7 @@ def generate_html(stocks_data, supervision_list, generated_at):
 <html lang="ja"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>東証 上場維持基準 監視サイト</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:#f4f5f7;color:#1a1a2e;font-size:14px;line-height:1.6}}
@@ -498,8 +527,8 @@ tr:last-child td{{border-bottom:none}}
 a{{color:#1565c0;text-decoration:none}}a:hover{{text-decoration:underline}}
 .badge{{display:inline-block;font-size:10px;padding:2px 6px;border-radius:3px;margin-left:4px;font-weight:600;vertical-align:middle}}
 .bd{{background:#d32f2f;color:#fff}}.bw{{background:#f57c00;color:#fff}}
-.bs2{{background:#880e4f;color:#fff}}.bg10{{background:#6a1b9a;color:#fff}}
-.bkp{{background:#1565c0;color:#fff}}
+.bs2{{background:#880e4f;color:#fff}}.bsr{{background:#e65100;color:#fff}}
+.bg10{{background:#6a1b9a;color:#fff}}.bkp{{background:#1565c0;color:#fff}}
 .reason{{font-size:10px;color:#888;margin-top:3px;line-height:1.4}}
 .empty{{padding:16px;background:#fff;border:1px solid #e0e0e0;border-top:none;color:#999;font-size:13px}}
 footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px solid #e0e0e0;margin-top:40px}}
@@ -512,8 +541,6 @@ footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px 
       color:#555;position:relative;bottom:-2px;transition:background .15s}}
 .tab:hover{{background:#e8e8e8}}
 .tab.active{{background:#fff;border-color:#ddd;border-bottom-color:#fff;color:#1a1a2e;font-weight:700}}
-.tab[data-hl="cur"]{{border-top:3px solid #d32f2f}}
-.tab[data-hl="prev"]{{border-top:3px solid #f57c00}}
 .tbadge{{display:inline-block;font-size:10px;padding:1px 5px;border-radius:10px;margin-left:3px;font-weight:700}}
 .tbd{{background:#d32f2f;color:#fff}}.tbw{{background:#f57c00;color:#fff}}
 .tab-panels{{padding:0 24px}}
@@ -554,9 +581,8 @@ footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px 
 <div class="tab-legend">
 <span><span class="tbadge tbd">N</span>危険ゾーン</span>
 <span><span class="tbadge tbw">N</span>注意ゾーン</span>
-<span>赤ボーダー=今月({tm}月)基準日</span>
-<span>橙ボーダー=先月({pm}月)基準日</span>
-<span><span class="badge bs2">監理中</span>JPX監理ポスト指定</span>
+<span><span class="badge bs2">監理中</span>監理ポスト</span>
+<span><span class="badge bsr">整理中</span>整理ポスト（上場廃止確定）</span>
 <span><span class="badge bkp">改善期間中</span>改善期間該当</span>
 <span><span class="badge bg10">上場N年超</span>グロース10年ルール適用</span>
 </div>
