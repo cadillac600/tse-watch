@@ -117,29 +117,19 @@ def generate_html(stocks_data, supervision_list, generated_at):
     print("[4/4] HTMLを生成中...")
     tm = TARGET_MONTH
     pm = PREV_MONTH
-    tm_ja = f"{tm}月"
-    pm_ja = f"{pm}月"
     sup_codes = {s["code"] for s in supervision_list}
 
-    # 今月・先月・それ以外に分類
-    dt, wt = [], []   # 今月 danger/warning
-    dp, wp = [], []   # 先月 danger/warning
-    do_, wo = [], []  # それ以外 danger/warning
-
+    # 月別に集計 (0 = 決算月不明)
+    by_month = {m: {"danger": [], "warning": []} for m in range(0, 13)}
     for s in stocks_data:
-        fm = s["fiscal_month"]
-        if s["risk"] == "danger":
-            if fm == tm:   dt.append(s)
-            elif fm == pm: dp.append(s)
-            else:          do_.append(s)
-        elif s["risk"] == "warning":
-            if fm == tm:   wt.append(s)
-            elif fm == pm: wp.append(s)
-            else:          wo.append(s)
+        m = s["fiscal_month"] or 0
+        by_month[m][s["risk"]].append(s)
 
-    total = sum(len(x) for x in [dt, wt, dp, wp, do_, wo])
+    total = len(stocks_data)
+    thead = ('<thead><tr><th>コード</th><th>銘柄名</th><th>市場</th>'
+             '<th>時価総額</th><th>決算</th><th>基準日</th><th>判定</th></tr></thead>')
 
-    def row(s):
+    def stock_row(s):
         code = s["code"]
         cap = f'{s["market_cap"]:,.0f}億円' if s["market_cap"] else "取得不可"
         fi = f'{s["fiscal_month"]}月決算' if s["fiscal_month"] else "不明"
@@ -158,18 +148,60 @@ def generate_html(stocks_data, supervision_list, generated_at):
                 f'<td>{s["name"]}{sup}</td><td>{ms}</td>'
                 f'<td class="rc">{cap}</td><td>{fi}</td><td class="rd">{dl}</td><td>{rb}</td></tr>')
 
-    def sec(title, items, sid, cls):
-        if not items:
-            return (f'<section id="{sid}"><h2 class="{cls}">{title}</h2>'
-                    f'<p class="empty">該当銘柄なし</p></section>')
-        rows = "".join(row(s) for s in items)
-        return (f'<section id="{sid}"><h2 class="{cls}">{title} '
-                f'<span class="cnt">({len(items)}銘柄)</span></h2>'
-                f'<div class="tw"><table><thead><tr>'
-                f'<th>コード</th><th>銘柄名</th><th>市場</th>'
-                f'<th>時価総額</th><th>決算</th><th>基準日</th><th>判定</th>'
-                f'</tr></thead><tbody>{rows}</tbody></table></div></section>')
+    def month_panel(m):
+        d = by_month[m]["danger"]
+        w = by_month[m]["warning"]
+        parts = []
+        for items, cls, icon, label in [
+            (d, "cdanger", "🔴", "危険ゾーン"),
+            (w, "cwarning", "🟠", "注意ゾーン"),
+        ]:
+            if items:
+                rows = "".join(stock_row(s) for s in items)
+                parts.append(
+                    f'<div class="tsec"><h3 class="{cls}">{icon} {label} '
+                    f'<span class="cnt">({len(items)}銘柄)</span></h3>'
+                    f'<div class="tw"><table>{thead}<tbody>{rows}</tbody></table></div></div>')
+            else:
+                parts.append(
+                    f'<div class="tsec"><h3 class="{cls}">{icon} {label}</h3>'
+                    f'<p class="empty">該当銘柄なし</p></div>')
+        return "".join(parts)
 
+    # タブボタン生成
+    tab_btns = []
+    tab_panels = []
+
+    for m in range(1, 13):
+        d = by_month[m]["danger"]
+        w = by_month[m]["warning"]
+        badges = ""
+        if d: badges += f'<span class="tbadge tbd">{len(d)}</span>'
+        if w: badges += f'<span class="tbadge tbw">{len(w)}</span>'
+        hl = 'data-hl="cur"' if m == tm else ('data-hl="prev"' if m == pm else "")
+        active = " active" if m == tm else ""
+        tab_btns.append(
+            f'<button class="tab{active}" onclick="showTab({m})" id="tbtn-{m}" {hl}>'
+            f'{m}月{badges}</button>')
+        tab_panels.append(
+            f'<div class="tab-panel{active}" id="panel-{m}">{month_panel(m)}</div>')
+
+    # 決算月不明タブ
+    ud = by_month[0]["danger"]
+    uw = by_month[0]["warning"]
+    if ud or uw:
+        badges = ""
+        if ud: badges += f'<span class="tbadge tbd">{len(ud)}</span>'
+        if uw: badges += f'<span class="tbadge tbw">{len(uw)}</span>'
+        tab_btns.append(
+            f'<button class="tab" onclick="showTab(0)" id="tbtn-0">不明{badges}</button>')
+        tab_panels.append(
+            f'<div class="tab-panel" id="panel-0">{month_panel(0)}</div>')
+
+    tab_btns_html = "\n".join(tab_btns)
+    tab_panels_html = "\n".join(tab_panels)
+
+    # 監理ポストセクション
     sup_html = ""
     if supervision_list:
         sr = "".join(
@@ -183,11 +215,10 @@ def generate_html(stocks_data, supervision_list, generated_at):
                     f'<th>コード</th><th>銘柄名</th><th>種別</th><th>理由</th>'
                     f'</tr></thead><tbody>{sr}</tbody></table></div></section>')
 
-    prev_html = ""
-    if pm != tm:
-        prev_html = f"""
-{sec(f"🔴 先月（{pm_ja}が基準日）危険ゾーン", dp, "dp", "cdanger")}
-{sec(f"🟠 先月（{pm_ja}が基準日）注意ゾーン", wp, "wp", "cwarning")}"""
+    tm_d = len(by_month[tm]["danger"])
+    tm_w = len(by_month[tm]["warning"])
+    pm_d = len(by_month[pm]["danger"])
+    pm_w = len(by_month[pm]["warning"])
 
     return f"""<!DOCTYPE html>
 <html lang="ja"><head>
@@ -206,6 +237,7 @@ header h1{{font-size:20px;font-weight:700}}
 main{{padding:0 24px 48px;max-width:1200px;margin:0 auto}}
 section{{margin-top:28px}}
 h2{{font-size:16px;font-weight:700;padding:10px 14px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
+h3{{font-size:15px;font-weight:700;padding:9px 14px;border-radius:6px 6px 0 0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
 .cdanger{{background:#ffebee;color:#b71c1c;border:1px solid #ef9a9a}}
 .cwarning{{background:#fff3e0;color:#bf360c;border:1px solid #ffcc80}}
 .csup{{background:#fce4ec;color:#880e4f;border:1px solid #f48fb1}}
@@ -223,6 +255,24 @@ a{{color:#1565c0;text-decoration:none}}a:hover{{text-decoration:underline}}
 .bd{{background:#d32f2f;color:#fff}}.bw{{background:#f57c00;color:#fff}}.bs{{background:#880e4f;color:#fff}}
 .empty{{padding:16px;background:#fff;border:1px solid #e0e0e0;border-top:none;color:#999;font-size:13px}}
 footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px solid #e0e0e0;margin-top:40px}}
+/* タブ */
+.tab-wrap{{background:#fff;border-bottom:2px solid #ddd;padding:16px 24px 0;margin-top:28px}}
+.tab-label{{font-size:12px;color:#666;margin-bottom:8px;font-weight:600}}
+.tab-bar{{display:flex;flex-wrap:wrap;gap:3px}}
+.tab{{padding:7px 13px;border:1px solid #ddd;border-bottom:none;background:#f5f5f5;
+      cursor:pointer;border-radius:5px 5px 0 0;font-size:13px;font-weight:500;
+      color:#555;position:relative;bottom:-2px;transition:background .15s}}
+.tab:hover{{background:#e8e8e8}}
+.tab.active{{background:#fff;border-color:#ddd;border-bottom-color:#fff;color:#1a1a2e;font-weight:700}}
+.tab[data-hl="cur"]{{border-top:3px solid #d32f2f}}
+.tab[data-hl="prev"]{{border-top:3px solid #f57c00}}
+.tbadge{{display:inline-block;font-size:10px;padding:1px 5px;border-radius:10px;margin-left:3px;font-weight:700}}
+.tbd{{background:#d32f2f;color:#fff}}.tbw{{background:#f57c00;color:#fff}}
+.tab-panels{{padding:0 24px}}
+.tab-panel{{display:none}}.tab-panel.active{{display:block}}
+.tsec{{margin-top:20px}}
+.tab-legend{{display:flex;gap:16px;padding:10px 24px;font-size:11px;color:#888;background:#fff;border-bottom:1px solid #eee}}
+.tab-legend span{{display:flex;align-items:center;gap:4px}}
 </style></head><body>
 <header>
 <div><h1>📊 東証 上場維持基準 監視サイト</h1>
@@ -230,22 +280,42 @@ footer{{text-align:center;padding:24px;font-size:11px;color:#999;border-top:1px 
 <div class="meta">最終更新: {generated_at}<br>毎日自動更新（GitHub Actions）</div>
 </header>
 <div class="bar">
-<div><span class="lbl">{tm_ja}基準日・危険</span><span class="num nd">{len(dt)}</span><span class="lbl">銘柄</span></div>
-<div><span class="lbl">{tm_ja}基準日・注意</span><span class="num nw">{len(wt)}</span><span class="lbl">銘柄</span></div>
-<div><span class="lbl">{pm_ja}基準日・危険</span><span class="num nd">{len(dp)}</span><span class="lbl">銘柄</span></div>
-<div><span class="lbl">{pm_ja}基準日・注意</span><span class="num nw">{len(wp)}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">今月({tm}月)危険</span><span class="num nd">{tm_d}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">今月({tm}月)注意</span><span class="num nw">{tm_w}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">先月({pm}月)危険</span><span class="num nd">{pm_d}</span><span class="lbl">銘柄</span></div>
+<div><span class="lbl">先月({pm}月)注意</span><span class="num nw">{pm_w}</span><span class="lbl">銘柄</span></div>
 <div><span class="lbl">全月合計</span><span class="num" style="color:#1565c0">{total}</span><span class="lbl">銘柄</span></div>
 </div>
 <div class="notice">⚠️ <strong>免責事項：</strong>時価総額は「会社全体」（株価×発行済株式数）の推定値です。上場維持基準の「流通株式時価総額」とは異なります（流通比率30%仮定の目安）。投資判断の根拠にしないでください。基準日は決算月の月末最終日です。</div>
 <main>
-{sec(f"🔴 今月（{tm_ja}が基準日）危険ゾーン", dt, "dt", "cdanger")}
-{sec(f"🟠 今月（{tm_ja}が基準日）注意ゾーン", wt, "wt", "cwarning")}
-{prev_html}
 {sup_html}
-{sec("⚠️ 危険ゾーン（その他の月が基準日）", do_, "do", "cdanger")}
-{sec("💛 注意ゾーン（その他の月が基準日）", wo, "wo", "cwarning")}
+<div class="tab-wrap">
+<div class="tab-label">📅 決算月で絞り込む</div>
+<div class="tab-bar">
+{tab_btns_html}
+</div>
+</div>
+<div class="tab-legend">
+<span><span class="tbadge tbd">N</span> 危険ゾーン（基準値を大きく下回る）</span>
+<span><span class="tbadge tbw">N</span> 注意ゾーン（基準値に近い）</span>
+<span style="color:#d32f2f">■</span> 今月({tm}月)が基準日&nbsp;
+<span style="color:#f57c00">■</span> 先月({pm}月)が基準日
+</div>
+<div class="tab-panels">
+{tab_panels_html}
+</div>
 </main>
 <footer>データ出典：<a href="https://www.jpx.co.jp/markets/statistics-equities/misc/01.html" target="_blank">東証上場銘柄一覧（JPX）</a>、株価・株式数・決算月：Yahoo Finance（yfinance）<br>本サイトは個人学習目的で作成されており、投資助言ではありません。</footer>
+<script>
+function showTab(m) {{
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  var panel = document.getElementById('panel-' + m);
+  var btn = document.getElementById('tbtn-' + m);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+}}
+</script>
 </body></html>"""
 
 
