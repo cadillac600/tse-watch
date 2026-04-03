@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年4月3日 03:17",
+  "generated_at": "2026年4月3日 03:26",
   "target_month": 4,
   "prev_month": 3,
   "stocks": [
@@ -338,16 +338,6 @@
       "name": "ルネサンス",
       "market_str": "プライム（内国株式）",
       "market_cap": 201.3,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null
-    },
-    {
-      "code": "3694",
-      "name": "オプティム",
-      "market_str": "プライム（内国株式）",
-      "market_cap": 234.9,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -969,16 +959,6 @@
       "market_str": "プライム（内国株式）",
       "market_cap": 153.1,
       "fiscal_month": 1,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null
-    },
-    {
-      "code": "3696",
-      "name": "セレス",
-      "market_str": "プライム（内国株式）",
-      "market_cap": 168.6,
-      "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null
