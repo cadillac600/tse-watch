@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年5月4日 03:56",
+  "generated_at": "2026年5月5日 03:37",
   "target_month": 5,
   "prev_month": 4,
   "stocks": [
@@ -1522,24 +1522,6 @@
       "sup_type": ""
     },
     {
-      "code": "3686",
-      "name": "ディー・エル・イー",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 45.2,
-      "float_cap": 11.2,
-      "float_ratio": 24.8,
-      "eff_float_cap": 11.2,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）",
-        "流通比率25% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3192",
       "name": "白鳩",
       "market_str": "スタンダード（内国株式）",
@@ -2157,9 +2139,9 @@
       "code": "3121",
       "name": "マーチャント・バンカーズ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 63.8,
+      "total_cap": 62.5,
       "float_cap": 15.5,
-      "float_ratio": 24.3,
+      "float_ratio": 24.8,
       "eff_float_cap": 15.5,
       "fiscal_month": 10,
       "risk": "warning",
@@ -2167,7 +2149,7 @@
       "listing_years": null,
       "reasons": [
         "流通時価16億（基準10億に近接）",
-        "流通比率24% < 基準25%"
+        "流通比率25% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -2764,6 +2746,23 @@
       "listing_years": null,
       "reasons": [
         "流通比率21% < 基準25%"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "3683",
+      "name": "サイバーリンクス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 108.6,
+      "float_cap": 25.9,
+      "float_ratio": 23.8,
+      "eff_float_cap": 25.9,
+      "fiscal_month": 12,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通比率24% < 基準25%"
       ],
       "sup_type": ""
     },
