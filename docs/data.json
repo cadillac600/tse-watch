@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年5月5日 03:37",
+  "generated_at": "2026年5月6日 03:54",
   "target_month": 5,
   "prev_month": 4,
   "stocks": [
@@ -956,6 +956,24 @@
       "sup_type": ""
     },
     {
+      "code": "3694",
+      "name": "オプティム",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 235.4,
+      "float_cap": 72.0,
+      "float_ratio": 30.6,
+      "eff_float_cap": 72.0,
+      "fiscal_month": 3,
+      "risk": "danger",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価72億 < 基準100億",
+        "流通比率31% < 基準35%"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "3657",
       "name": "ポールトゥウィンホールディングス",
       "market_str": "プライム（内国株式）",
@@ -1266,6 +1284,24 @@
       "sup_type": ""
     },
     {
+      "code": "3695",
+      "name": "ＧＭＯプロダクトプラットフォーム",
+      "market_str": "グロース（内国株式）",
+      "total_cap": 73.2,
+      "float_cap": 8.4,
+      "float_ratio": 11.5,
+      "eff_float_cap": 8.4,
+      "fiscal_month": 12,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価8億（基準5億に近接）",
+        "流通比率12% < 基準25%"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "3474",
       "name": "Ｇ－ＦＡＣＴＯＲＹ",
       "market_str": "グロース（内国株式）",
@@ -1454,6 +1490,23 @@
       "sup_type": ""
     },
     {
+      "code": "3690",
+      "name": "イルグルム",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 33.5,
+      "float_cap": 11.0,
+      "float_ratio": 32.8,
+      "eff_float_cap": 11.0,
+      "fiscal_month": 9,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価11億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "2291",
       "name": "福留ハム",
       "market_str": "スタンダード（内国株式）",
@@ -1518,6 +1571,24 @@
       "listing_years": null,
       "reasons": [
         "流通時価11億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "3686",
+      "name": "ディー・エル・イー",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 45.2,
+      "float_cap": 11.2,
+      "float_ratio": 24.8,
+      "eff_float_cap": 11.2,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価11億（基準10億に近接）",
+        "流通比率25% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -2139,9 +2210,9 @@
       "code": "3121",
       "name": "マーチャント・バンカーズ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 62.5,
+      "total_cap": 63.8,
       "float_cap": 15.5,
-      "float_ratio": 24.8,
+      "float_ratio": 24.3,
       "eff_float_cap": 15.5,
       "fiscal_month": 10,
       "risk": "warning",
@@ -2149,7 +2220,7 @@
       "listing_years": null,
       "reasons": [
         "流通時価16億（基準10億に近接）",
-        "流通比率25% < 基準25%"
+        "流通比率24% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -3107,6 +3178,23 @@
       "sup_type": ""
     },
     {
+      "code": "3696",
+      "name": "セレス",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 242.3,
+      "float_cap": 118.3,
+      "float_ratio": 48.8,
+      "eff_float_cap": 118.3,
+      "fiscal_month": 12,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価118億（基準100億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "3486",
       "name": "グローバル・リンク・マネジメント",
       "market_str": "プライム（内国株式）",
@@ -3195,9 +3283,9 @@
       "code": "2359",
       "name": "コア",
       "market_str": "プライム（内国株式）",
-      "total_cap": 289.7,
+      "total_cap": 289.6,
       "float_cap": 127.0,
-      "float_ratio": 43.8,
+      "float_ratio": 43.9,
       "eff_float_cap": 127.0,
       "fiscal_month": 3,
       "risk": "warning",
