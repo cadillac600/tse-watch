@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年5月11日 04:12",
+  "generated_at": "2026年5月12日 03:55",
   "target_month": 5,
   "prev_month": 4,
   "stocks": [
@@ -7,7 +7,7 @@
       "code": "2459",
       "name": "アウンコンサルティング",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.6,
+      "total_cap": 15.7,
       "float_cap": 6.6,
       "float_ratio": 42.1,
       "eff_float_cap": 6.6,
@@ -21,54 +21,19 @@
       "sup_type": ""
     },
     {
-      "code": "4198",
-      "name": "テンダ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 36.8,
-      "float_cap": 7.6,
-      "float_ratio": 20.7,
-      "eff_float_cap": 7.6,
-      "fiscal_month": 5,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億 < 基準10億",
-        "流通比率21% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4057",
-      "name": "インターファクトリー",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 15.6,
-      "float_cap": 6.6,
-      "float_ratio": 42.2,
-      "eff_float_cap": 6.6,
-      "fiscal_month": 5,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2796",
       "name": "ファーマライズホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 60.8,
-      "float_cap": 17.5,
+      "total_cap": 60.0,
+      "float_cap": 17.3,
       "float_ratio": 28.8,
-      "eff_float_cap": 17.5,
+      "eff_float_cap": 17.3,
       "fiscal_month": 5,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価18億（基準10億に近接）"
+        "流通時価17億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -93,10 +58,10 @@
       "code": "2934",
       "name": "ジェイフロンティア",
       "market_str": "グロース（内国株式）",
-      "total_cap": 93.9,
-      "float_cap": 21.2,
+      "total_cap": 92.9,
+      "float_cap": 21.0,
       "float_ratio": 22.6,
-      "eff_float_cap": 21.2,
+      "eff_float_cap": 21.0,
       "fiscal_month": 5,
       "risk": "warning",
       "growth_10yr": false,
@@ -110,16 +75,16 @@
       "code": "3501",
       "name": "ＳＵＭＩＮＯＥ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 169.5,
-      "float_cap": 116.3,
+      "total_cap": 168.1,
+      "float_cap": 115.3,
       "float_ratio": 68.6,
-      "eff_float_cap": 116.3,
+      "eff_float_cap": 115.3,
       "fiscal_month": 5,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価116億（基準100億に近接）"
+        "流通時価115億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -127,16 +92,16 @@
       "code": "2462",
       "name": "ライク",
       "market_str": "プライム（内国株式）",
-      "total_cap": 304.4,
-      "float_cap": 137.2,
+      "total_cap": 305.1,
+      "float_cap": 137.6,
       "float_ratio": 45.1,
-      "eff_float_cap": 137.2,
+      "eff_float_cap": 137.6,
       "fiscal_month": 5,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価137億（基準100億に近接）"
+        "流通時価138億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -144,10 +109,10 @@
       "code": "3549",
       "name": "クスリのアオキホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 3653.2,
-      "float_cap": 1271.8,
+      "total_cap": 3641.8,
+      "float_cap": 1267.9,
       "float_ratio": 34.8,
-      "eff_float_cap": 1271.8,
+      "eff_float_cap": 1267.9,
       "fiscal_month": 5,
       "risk": "warning",
       "growth_10yr": false,
@@ -161,33 +126,16 @@
       "code": "3180",
       "name": "ビューティガレージ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 194.1,
-      "float_cap": 92.2,
+      "total_cap": 195.5,
+      "float_cap": 92.8,
       "float_ratio": 47.5,
-      "eff_float_cap": 92.2,
+      "eff_float_cap": 92.8,
       "fiscal_month": 4,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価92億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3903",
-      "name": "ｇｕｍｉ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 166.8,
-      "float_cap": 95.0,
-      "float_ratio": 56.9,
-      "eff_float_cap": 95.0,
-      "fiscal_month": 4,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価95億 < 基準100億"
+        "流通時価93億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -212,10 +160,10 @@
       "code": "3329",
       "name": "東和フードサービス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 166.2,
-      "float_cap": 30.6,
+      "total_cap": 165.1,
+      "float_cap": 30.4,
       "float_ratio": 18.4,
-      "eff_float_cap": 30.6,
+      "eff_float_cap": 30.4,
       "fiscal_month": 4,
       "risk": "warning",
       "growth_10yr": false,
@@ -229,10 +177,10 @@
       "code": "1436",
       "name": "グリーンエナジー＆カンパニー",
       "market_str": "グロース（内国株式）",
-      "total_cap": 221.1,
-      "float_cap": 54.2,
+      "total_cap": 209.1,
+      "float_cap": 51.3,
       "float_ratio": 24.5,
-      "eff_float_cap": 54.2,
+      "eff_float_cap": 51.3,
       "fiscal_month": 4,
       "risk": "warning",
       "growth_10yr": false,
@@ -246,87 +194,18 @@
       "code": "1873",
       "name": "日本ハウスホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 120.8,
-      "float_cap": 103.5,
+      "total_cap": 120.4,
+      "float_cap": 103.1,
       "float_ratio": 85.6,
-      "eff_float_cap": 103.5,
+      "eff_float_cap": 103.1,
       "fiscal_month": 4,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価104億（基準100億に近接）"
+        "流通時価103億（基準100億に近接）"
       ],
       "sup_type": ""
-    },
-    {
-      "code": "3843",
-      "name": "フリービット",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 311.0,
-      "float_cap": 119.9,
-      "float_ratio": 38.6,
-      "eff_float_cap": 119.9,
-      "fiscal_month": 4,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価120億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3803",
-      "name": "イメージ情報開発",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 19.4,
-      "float_cap": 3.1,
-      "float_ratio": 15.8,
-      "eff_float_cap": 3.1,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準5億",
-        "流通比率16% < 基準25%"
-      ],
-      "sup_type": "監理"
-    },
-    {
-      "code": "3787",
-      "name": "テクノマセマティカル",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 10.8,
-      "float_cap": 3.4,
-      "float_ratio": 31.7,
-      "eff_float_cap": 3.4,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準10億"
-      ],
-      "sup_type": "監理"
-    },
-    {
-      "code": "4316",
-      "name": "ビーマップ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 5.8,
-      "float_cap": 4.3,
-      "float_ratio": 73.3,
-      "eff_float_cap": 4.3,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価4億 < 基準5億"
-      ],
-      "sup_type": "監理"
     },
     {
       "code": "2673",
@@ -346,27 +225,10 @@
       "sup_type": "監理"
     },
     {
-      "code": "3681",
-      "name": "ブイキューブ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 6.5,
-      "float_cap": 5.1,
-      "float_ratio": 78.3,
-      "eff_float_cap": 5.1,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価5億 < 基準100億"
-      ],
-      "sup_type": "監理"
-    },
-    {
       "code": "3670",
       "name": "協立情報通信",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 19.5,
+      "total_cap": 19.4,
       "float_cap": 5.8,
       "float_ratio": 29.9,
       "eff_float_cap": 5.8,
@@ -383,7 +245,7 @@
       "code": "1776",
       "name": "三井住建道路",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 183.1,
+      "total_cap": 183.2,
       "float_cap": 7.1,
       "float_ratio": 3.9,
       "eff_float_cap": 7.1,
@@ -401,7 +263,7 @@
       "code": "3546",
       "name": "アレンザホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 436.5,
+      "total_cap": 436.8,
       "float_cap": 25.2,
       "float_ratio": 5.8,
       "eff_float_cap": 25.2,
@@ -434,117 +296,10 @@
       "sup_type": "監理"
     },
     {
-      "code": "3777",
-      "name": "環境フレンドリーホールディングス",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 182.7,
-      "float_cap": 0.6,
-      "float_ratio": 0.3,
-      "eff_float_cap": 0.6,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価1億 < 基準5億",
-        "流通比率0% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3727",
-      "name": "アプリックス",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 76.7,
-      "float_cap": 1.8,
-      "float_ratio": 2.3,
-      "eff_float_cap": 1.8,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価2億 < 基準5億",
-        "流通比率2% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4438",
-      "name": "Ｗｅｌｂｙ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 25.7,
-      "float_cap": 2.6,
-      "float_ratio": 10.2,
-      "eff_float_cap": 2.6,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準5億",
-        "流通比率10% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4378",
-      "name": "ＣＩＮＣ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 13.0,
-      "float_cap": 2.7,
-      "float_ratio": 21.1,
-      "eff_float_cap": 2.7,
-      "fiscal_month": 10,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準5億",
-        "流通比率21% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4059",
-      "name": "まぐまぐ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 12.0,
-      "float_cap": 2.8,
-      "float_ratio": 23.8,
-      "eff_float_cap": 2.8,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準10億",
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4381",
-      "name": "ビープラッツ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 9.6,
-      "float_cap": 3.0,
-      "float_ratio": 30.9,
-      "eff_float_cap": 3.0,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価3億 < 基準5億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3494",
       "name": "マリオン",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 27.5,
+      "total_cap": 27.7,
       "float_cap": 3.8,
       "float_ratio": 13.6,
       "eff_float_cap": 3.8,
@@ -559,47 +314,13 @@
       "sup_type": ""
     },
     {
-      "code": "4020",
-      "name": "ビートレンド",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 14.7,
-      "float_cap": 4.3,
-      "float_ratio": 29.3,
-      "eff_float_cap": 4.3,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価4億 < 基準5億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4073",
-      "name": "ジィ・シィ企画",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 12.9,
-      "float_cap": 4.4,
-      "float_ratio": 34.0,
-      "eff_float_cap": 4.4,
-      "fiscal_month": 6,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価4億 < 基準5億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2164",
       "name": "地域新聞社",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.7,
-      "float_cap": 4.5,
+      "total_cap": 23.1,
+      "float_cap": 4.3,
       "float_ratio": 18.8,
-      "eff_float_cap": 4.5,
+      "eff_float_cap": 4.3,
       "fiscal_month": 8,
       "risk": "danger",
       "growth_10yr": false,
@@ -614,35 +335,17 @@
       "code": "3667",
       "name": "ｅｎｉｓｈ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 21.9,
-      "float_cap": 4.7,
+      "total_cap": 21.0,
+      "float_cap": 4.5,
       "float_ratio": 21.5,
-      "eff_float_cap": 4.7,
+      "eff_float_cap": 4.5,
       "fiscal_month": 12,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価5億 < 基準10億",
+        "流通時価4億 < 基準10億",
         "流通比率22% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4178",
-      "name": "Ｓｈａｒｉｎｇ　Ｉｎｎｏｖａｔｉｏｎｓ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 19.7,
-      "float_cap": 4.8,
-      "float_ratio": 24.3,
-      "eff_float_cap": 4.8,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価5億 < 基準5億",
-        "流通比率24% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -655,23 +358,6 @@
       "float_ratio": 45.6,
       "eff_float_cap": 5.3,
       "fiscal_month": 6,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価5億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3779",
-      "name": "ジェイ・エスコムホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 17.8,
-      "float_cap": 5.4,
-      "float_ratio": 30.4,
-      "eff_float_cap": 5.4,
-      "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -702,7 +388,7 @@
       "code": "2795",
       "name": "日本プリメックス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 46.5,
+      "total_cap": 46.4,
       "float_cap": 5.7,
       "float_ratio": 12.2,
       "eff_float_cap": 5.7,
@@ -720,7 +406,7 @@
       "code": "2481",
       "name": "タウンニュース社",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 38.3,
+      "total_cap": 38.0,
       "float_cap": 5.9,
       "float_ratio": 15.5,
       "eff_float_cap": 5.9,
@@ -735,28 +421,10 @@
       "sup_type": ""
     },
     {
-      "code": "3986",
-      "name": "ビーブレイクシステムズ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.8,
-      "float_cap": 5.9,
-      "float_ratio": 24.9,
-      "eff_float_cap": 5.9,
-      "fiscal_month": 6,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億 < 基準10億",
-        "流通比率25% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2721",
       "name": "ジェイホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 11.2,
+      "total_cap": 11.1,
       "float_cap": 6.2,
       "float_ratio": 55.6,
       "eff_float_cap": 6.2,
@@ -773,7 +441,7 @@
       "code": "3416",
       "name": "ピクスタ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.3,
+      "total_cap": 15.4,
       "float_cap": 6.2,
       "float_ratio": 40.4,
       "eff_float_cap": 6.2,
@@ -804,30 +472,13 @@
       "sup_type": ""
     },
     {
-      "code": "3646",
-      "name": "駅探",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.5,
-      "float_cap": 6.8,
-      "float_ratio": 44.0,
-      "eff_float_cap": 6.8,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2323",
       "name": "ｆｏｎｆｕｎ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 75.8,
-      "float_cap": 7.0,
+      "total_cap": 73.5,
+      "float_cap": 6.8,
       "float_ratio": 9.3,
-      "eff_float_cap": 7.0,
+      "eff_float_cap": 6.8,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -839,31 +490,14 @@
       "sup_type": ""
     },
     {
-      "code": "3908",
-      "name": "コラボス",
+      "code": "3646",
+      "name": "駅探",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.0,
-      "float_cap": 7.0,
-      "float_ratio": 46.2,
-      "eff_float_cap": 7.0,
+      "total_cap": 15.6,
+      "float_cap": 6.9,
+      "float_ratio": 44.0,
+      "eff_float_cap": 6.9,
       "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3985",
-      "name": "テモナ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 20.2,
-      "float_cap": 7.2,
-      "float_ratio": 35.7,
-      "eff_float_cap": 7.2,
-      "fiscal_month": 9,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -876,10 +510,10 @@
       "code": "3223",
       "name": "エスエルディー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 14.4,
-      "float_cap": 7.3,
+      "total_cap": 14.3,
+      "float_cap": 7.2,
       "float_ratio": 50.5,
-      "eff_float_cap": 7.3,
+      "eff_float_cap": 7.2,
       "fiscal_month": 2,
       "risk": "danger",
       "growth_10yr": false,
@@ -893,7 +527,7 @@
       "code": "3461",
       "name": "パルマ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 38.3,
+      "total_cap": 38.1,
       "float_cap": 7.4,
       "float_ratio": 19.4,
       "eff_float_cap": 7.4,
@@ -908,65 +542,13 @@
       "sup_type": ""
     },
     {
-      "code": "3909",
-      "name": "ショーケース",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 19.5,
-      "float_cap": 7.4,
-      "float_ratio": 38.1,
-      "eff_float_cap": 7.4,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3710",
-      "name": "ジョルダン",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 30.7,
-      "float_cap": 7.5,
-      "float_ratio": 24.5,
-      "eff_float_cap": 7.5,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億 < 基準10億",
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4243",
-      "name": "ニックス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 19.7,
-      "float_cap": 7.7,
-      "float_ratio": 39.2,
-      "eff_float_cap": 7.7,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2156",
       "name": "セーラー広告",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 14.0,
-      "float_cap": 7.8,
+      "total_cap": 14.2,
+      "float_cap": 7.9,
       "float_ratio": 55.4,
-      "eff_float_cap": 7.8,
+      "eff_float_cap": 7.9,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1011,13 +593,30 @@
       "sup_type": ""
     },
     {
+      "code": "3174",
+      "name": "ハピネス・アンド・ディ",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 16.1,
+      "float_cap": 8.4,
+      "float_ratio": 52.0,
+      "eff_float_cap": 8.4,
+      "fiscal_month": 8,
+      "risk": "danger",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価8億 < 基準10億"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "1438",
       "name": "岐阜造園",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 60.1,
-      "float_cap": 8.6,
+      "total_cap": 61.0,
+      "float_cap": 8.7,
       "float_ratio": 14.3,
-      "eff_float_cap": 8.6,
+      "eff_float_cap": 8.7,
       "fiscal_month": 9,
       "risk": "danger",
       "growth_10yr": false,
@@ -1029,65 +628,14 @@
       "sup_type": ""
     },
     {
-      "code": "3910",
-      "name": "エムケイシステム",
+      "code": "3054",
+      "name": "ハイパー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.9,
-      "float_cap": 8.6,
-      "float_ratio": 54.1,
-      "eff_float_cap": 8.6,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4421",
-      "name": "ディ・アイ・システム",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 26.6,
-      "float_cap": 8.6,
-      "float_ratio": 32.2,
-      "eff_float_cap": 8.6,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2926",
-      "name": "篠崎屋",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 14.2,
+      "total_cap": 24.8,
       "float_cap": 8.7,
-      "float_ratio": 61.8,
+      "float_ratio": 35.1,
       "eff_float_cap": 8.7,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3174",
-      "name": "ハピネス・アンド・ディ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 16.7,
-      "float_cap": 8.7,
-      "float_ratio": 52.0,
-      "eff_float_cap": 8.7,
-      "fiscal_month": 8,
+      "fiscal_month": 12,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -1114,30 +662,13 @@
       "sup_type": ""
     },
     {
-      "code": "3054",
-      "name": "ハイパー",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 25.0,
-      "float_cap": 8.8,
-      "float_ratio": 35.1,
-      "eff_float_cap": 8.8,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3353",
       "name": "メディカル一光グループ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 105.3,
-      "float_cap": 8.9,
+      "total_cap": 104.1,
+      "float_cap": 8.8,
       "float_ratio": 8.5,
-      "eff_float_cap": 8.9,
+      "eff_float_cap": 8.8,
       "fiscal_month": 2,
       "risk": "danger",
       "growth_10yr": false,
@@ -1149,14 +680,14 @@
       "sup_type": ""
     },
     {
-      "code": "4341",
-      "name": "西菱電機",
+      "code": "2926",
+      "name": "篠崎屋",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 26.3,
+      "total_cap": 14.4,
       "float_cap": 8.9,
-      "float_ratio": 34.0,
+      "float_ratio": 61.8,
       "eff_float_cap": 8.9,
-      "fiscal_month": 3,
+      "fiscal_month": 9,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -1169,10 +700,10 @@
       "code": "3326",
       "name": "ランシステム",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.8,
-      "float_cap": 9.0,
+      "total_cap": 28.6,
+      "float_cap": 8.9,
       "float_ratio": 31.1,
-      "eff_float_cap": 9.0,
+      "eff_float_cap": 8.9,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1183,54 +714,19 @@
       "sup_type": ""
     },
     {
-      "code": "4196",
-      "name": "ネオマーケティング",
+      "code": "3137",
+      "name": "ファンデリー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 34.7,
-      "float_cap": 9.0,
-      "float_ratio": 25.8,
-      "eff_float_cap": 9.0,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3634",
-      "name": "ソケッツ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 18.0,
-      "float_cap": 9.2,
-      "float_ratio": 50.8,
+      "total_cap": 30.7,
+      "float_cap": null,
+      "float_ratio": null,
       "eff_float_cap": 9.2,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価9億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4172",
-      "name": "Ｈｉクラテス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 51.7,
-      "float_cap": 9.2,
-      "float_ratio": 17.8,
-      "eff_float_cap": 9.2,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億 < 基準10億",
-        "流通比率18% < 基準25%"
+        "流通時価9億(概算) < 基準10億"
       ],
       "sup_type": ""
     },
@@ -1238,11 +734,28 @@
       "code": "2425",
       "name": "ケアサービス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.6,
+      "total_cap": 28.5,
       "float_cap": 9.4,
       "float_ratio": 32.9,
       "eff_float_cap": 9.4,
       "fiscal_month": 3,
+      "risk": "danger",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価9億 < 基準10億"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2499",
+      "name": "日本和装ホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 28.1,
+      "float_cap": 9.4,
+      "float_ratio": 33.5,
+      "eff_float_cap": 9.4,
+      "fiscal_month": 12,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -1269,81 +782,13 @@
       "sup_type": ""
     },
     {
-      "code": "2499",
-      "name": "日本和装ホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.5,
-      "float_cap": 9.5,
-      "float_ratio": 33.5,
-      "eff_float_cap": 9.5,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4174",
-      "name": "アピリッツ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 25.2,
-      "float_cap": 9.5,
-      "float_ratio": 37.6,
-      "eff_float_cap": 9.5,
-      "fiscal_month": 1,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4016",
-      "name": "ＭＩＴホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 18.0,
-      "float_cap": 9.6,
-      "float_ratio": 53.2,
-      "eff_float_cap": 9.6,
-      "fiscal_month": 11,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億 < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3137",
-      "name": "ファンデリー",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.2,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 9.7,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億(概算) < 基準10億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3583",
       "name": "オーベクス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 37.2,
-      "float_cap": 9.8,
+      "total_cap": 36.2,
+      "float_cap": 9.5,
       "float_ratio": 26.3,
-      "eff_float_cap": 9.8,
+      "eff_float_cap": 9.5,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1354,14 +799,14 @@
       "sup_type": ""
     },
     {
-      "code": "2778",
-      "name": "パレモ・ホールディングス",
+      "code": "3634",
+      "name": "ソケッツ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 13.9,
-      "float_cap": 9.9,
-      "float_ratio": 71.1,
-      "eff_float_cap": 9.9,
-      "fiscal_month": 2,
+      "total_cap": 19.1,
+      "float_cap": 9.7,
+      "float_ratio": 50.8,
+      "eff_float_cap": 9.7,
+      "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -1391,10 +836,10 @@
       "code": "3496",
       "name": "アズーム",
       "market_str": "プライム（内国株式）",
-      "total_cap": 522.2,
-      "float_cap": 11.8,
-      "float_ratio": 2.3,
-      "eff_float_cap": 11.8,
+      "total_cap": 537.8,
+      "float_cap": 12.1,
+      "float_ratio": 2.2,
+      "eff_float_cap": 12.1,
       "fiscal_month": 9,
       "risk": "danger",
       "growth_10yr": false,
@@ -1406,31 +851,13 @@
       "sup_type": ""
     },
     {
-      "code": "4446",
-      "name": "Ｌｉｎｋ－Ｕグループ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 96.8,
-      "float_cap": 22.2,
-      "float_ratio": 23.0,
-      "eff_float_cap": 22.2,
-      "fiscal_month": 7,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価22億 < 基準100億",
-        "流通比率23% < 基準35%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "1433",
       "name": "ベステラ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 92.6,
-      "float_cap": 40.3,
+      "total_cap": 91.6,
+      "float_cap": 39.9,
       "float_ratio": 43.5,
-      "eff_float_cap": 40.3,
+      "eff_float_cap": 39.9,
       "fiscal_month": 1,
       "risk": "danger",
       "growth_10yr": false,
@@ -1441,72 +868,20 @@
       "sup_type": ""
     },
     {
-      "code": "4392",
-      "name": "ＦＩＧ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 130.3,
-      "float_cap": 51.2,
-      "float_ratio": 39.3,
-      "eff_float_cap": 51.2,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価51億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2395",
       "name": "新日本科学",
       "market_str": "プライム（内国株式）",
-      "total_cap": 532.9,
-      "float_cap": 52.2,
+      "total_cap": 518.3,
+      "float_cap": 50.8,
       "float_ratio": 9.8,
-      "eff_float_cap": 52.2,
+      "eff_float_cap": 50.8,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価52億 < 基準100億",
+        "流通時価51億 < 基準100億",
         "流通比率10% < 基準35%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4433",
-      "name": "ヒト・コミュニケーションズ・ホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 153.4,
-      "float_cap": 53.9,
-      "float_ratio": 35.1,
-      "eff_float_cap": 53.9,
-      "fiscal_month": 8,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価54億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3921",
-      "name": "ネオジャパン",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 222.9,
-      "float_cap": 55.0,
-      "float_ratio": 24.7,
-      "eff_float_cap": 55.0,
-      "fiscal_month": 1,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価55億 < 基準100億",
-        "流通比率25% < 基準35%"
       ],
       "sup_type": ""
     },
@@ -1514,10 +889,10 @@
       "code": "3678",
       "name": "メディアドゥ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 188.4,
-      "float_cap": 57.8,
+      "total_cap": 187.3,
+      "float_cap": 57.5,
       "float_ratio": 30.7,
-      "eff_float_cap": 57.8,
+      "eff_float_cap": 57.5,
       "fiscal_month": 2,
       "risk": "danger",
       "growth_10yr": false,
@@ -1529,53 +904,19 @@
       "sup_type": ""
     },
     {
-      "code": "4331",
-      "name": "テイクアンドギヴ・ニーズ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 102.1,
-      "float_cap": 64.1,
-      "float_ratio": 62.8,
-      "eff_float_cap": 64.1,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価64億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2804",
       "name": "ブルドックソース",
       "market_str": "プライム（内国株式）",
-      "total_cap": 226.5,
+      "total_cap": 227.9,
       "float_cap": null,
       "float_ratio": null,
-      "eff_float_cap": 68.0,
+      "eff_float_cap": 68.4,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
         "流通時価68億(概算) < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4053",
-      "name": "Ｓｕｎ　Ａｓｔｅｒｉｓｋ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 165.8,
-      "float_cap": 69.2,
-      "float_ratio": 41.7,
-      "eff_float_cap": 69.2,
-      "fiscal_month": 12,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価69億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1600,10 +941,10 @@
       "code": "1780",
       "name": "ヤマウラ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 275.0,
-      "float_cap": 69.6,
+      "total_cap": 275.2,
+      "float_cap": 69.7,
       "float_ratio": 25.3,
-      "eff_float_cap": 69.6,
+      "eff_float_cap": 69.7,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1618,34 +959,16 @@
       "code": "3657",
       "name": "ポールトゥウィンホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 105.4,
-      "float_cap": 75.1,
+      "total_cap": 104.3,
+      "float_cap": 74.4,
       "float_ratio": 71.3,
-      "eff_float_cap": 75.1,
+      "eff_float_cap": 74.4,
       "fiscal_month": 1,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価75億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3694",
-      "name": "オプティム",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 250.1,
-      "float_cap": 76.5,
-      "float_ratio": 30.6,
-      "eff_float_cap": 76.5,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価76億 < 基準100億",
-        "流通比率31% < 基準35%"
+        "流通時価74億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1653,10 +976,10 @@
       "code": "2461",
       "name": "ファンコミュニケーションズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 278.6,
-      "float_cap": 78.7,
+      "total_cap": 279.9,
+      "float_cap": 79.1,
       "float_ratio": 28.2,
-      "eff_float_cap": 78.7,
+      "eff_float_cap": 79.1,
       "fiscal_month": 12,
       "risk": "danger",
       "growth_10yr": false,
@@ -1671,10 +994,10 @@
       "code": "2307",
       "name": "クロスキャット",
       "market_str": "プライム（内国株式）",
-      "total_cap": 132.1,
-      "float_cap": 80.8,
+      "total_cap": 131.8,
+      "float_cap": 80.6,
       "float_ratio": 61.1,
-      "eff_float_cap": 80.8,
+      "eff_float_cap": 80.6,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1688,27 +1011,27 @@
       "code": "2930",
       "name": "北の達人コーポレーション",
       "market_str": "プライム（内国株式）",
-      "total_cap": 181.3,
-      "float_cap": 82.8,
+      "total_cap": 179.9,
+      "float_cap": 82.2,
       "float_ratio": 45.7,
-      "eff_float_cap": 82.8,
+      "eff_float_cap": 82.2,
       "fiscal_month": 2,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価83億 < 基準100億"
+        "流通時価82億 < 基準100億"
       ],
       "sup_type": ""
     },
     {
-      "code": "3925",
-      "name": "ダブルスタンダード",
+      "code": "2130",
+      "name": "メンバーズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 185.6,
-      "float_cap": 83.6,
-      "float_ratio": 45.1,
-      "eff_float_cap": 83.6,
+      "total_cap": 145.3,
+      "float_cap": 84.4,
+      "float_ratio": 58.1,
+      "eff_float_cap": 84.4,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1719,14 +1042,14 @@
       "sup_type": ""
     },
     {
-      "code": "3963",
-      "name": "シンクロ・フード",
+      "code": "3457",
+      "name": "Ａｎｄ　Ｄｏホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 119.5,
-      "float_cap": 84.9,
-      "float_ratio": 71.1,
-      "eff_float_cap": 84.9,
-      "fiscal_month": 3,
+      "total_cap": 208.3,
+      "float_cap": 85.0,
+      "float_ratio": 40.8,
+      "eff_float_cap": 85.0,
+      "fiscal_month": 6,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
@@ -1739,50 +1062,16 @@
       "code": "2410",
       "name": "キャリアデザインセンター",
       "market_str": "プライム（内国株式）",
-      "total_cap": 133.6,
-      "float_cap": 85.5,
+      "total_cap": 133.1,
+      "float_cap": 85.2,
       "float_ratio": 64.0,
-      "eff_float_cap": 85.5,
+      "eff_float_cap": 85.2,
       "fiscal_month": 9,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価86億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2130",
-      "name": "メンバーズ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 147.4,
-      "float_cap": 85.6,
-      "float_ratio": 58.1,
-      "eff_float_cap": 85.6,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価86億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3457",
-      "name": "Ａｎｄ　Ｄｏホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 209.9,
-      "float_cap": 85.7,
-      "float_ratio": 40.8,
-      "eff_float_cap": 85.7,
-      "fiscal_month": 6,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価86億 < 基準100億"
+        "流通時価85億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1790,10 +1079,10 @@
       "code": "2884",
       "name": "ヨシムラ・フード・ホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 161.9,
-      "float_cap": 86.2,
+      "total_cap": 161.2,
+      "float_cap": 85.8,
       "float_ratio": 53.2,
-      "eff_float_cap": 86.2,
+      "eff_float_cap": 85.8,
       "fiscal_month": 2,
       "risk": "danger",
       "growth_10yr": false,
@@ -1804,36 +1093,19 @@
       "sup_type": ""
     },
     {
-      "code": "3992",
-      "name": "ニーズウェル",
+      "code": "2209",
+      "name": "井村屋グループ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 173.1,
-      "float_cap": 86.3,
-      "float_ratio": 49.8,
-      "eff_float_cap": 86.3,
-      "fiscal_month": 9,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価86億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3834",
-      "name": "朝日ネット",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 161.2,
-      "float_cap": 87.1,
-      "float_ratio": 54.1,
-      "eff_float_cap": 87.1,
+      "total_cap": 296.4,
+      "float_cap": null,
+      "float_ratio": null,
+      "eff_float_cap": 88.9,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価87億 < 基準100億"
+        "流通時価89億(概算) < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1841,50 +1113,16 @@
       "code": "1429",
       "name": "日本アクア",
       "market_str": "プライム（内国株式）",
-      "total_cap": 224.5,
-      "float_cap": 87.7,
+      "total_cap": 229.3,
+      "float_cap": 89.6,
       "float_ratio": 39.1,
-      "eff_float_cap": 87.7,
+      "eff_float_cap": 89.6,
       "fiscal_month": 12,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価88億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3835",
-      "name": "ｅＢＡＳＥ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 185.0,
-      "float_cap": 87.7,
-      "float_ratio": 47.4,
-      "eff_float_cap": 87.7,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価88億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2209",
-      "name": "井村屋グループ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 294.8,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 88.4,
-      "fiscal_month": 3,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価88億(概算) < 基準100億"
+        "流通時価90億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1892,33 +1130,33 @@
       "code": "2335",
       "name": "キューブシステム",
       "market_str": "プライム（内国株式）",
-      "total_cap": 155.7,
-      "float_cap": 91.0,
+      "total_cap": 154.0,
+      "float_cap": 90.1,
       "float_ratio": 58.5,
-      "eff_float_cap": 91.0,
+      "eff_float_cap": 90.1,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価91億 < 基準100億"
+        "流通時価90億 < 基準100億"
       ],
       "sup_type": ""
     },
     {
-      "code": "3788",
-      "name": "ＧＭＯグローバルサイン・ホールディングス",
+      "code": "3415",
+      "name": "ＴＯＫＹＯ　ＢＡＳＥ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 229.5,
-      "float_cap": 92.5,
-      "float_ratio": 40.3,
-      "eff_float_cap": 92.5,
-      "fiscal_month": 12,
+      "total_cap": 156.9,
+      "float_cap": 93.7,
+      "float_ratio": 59.7,
+      "eff_float_cap": 93.7,
+      "fiscal_month": 1,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価92億 < 基準100億"
+        "流通時価94億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1926,10 +1164,10 @@
       "code": "3676",
       "name": "デジタルハーツホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 185.7,
-      "float_cap": 94.1,
+      "total_cap": 184.9,
+      "float_cap": 93.7,
       "float_ratio": 50.7,
-      "eff_float_cap": 94.1,
+      "eff_float_cap": 93.7,
       "fiscal_month": 3,
       "risk": "danger",
       "growth_10yr": false,
@@ -1943,33 +1181,16 @@
       "code": "2198",
       "name": "アイ・ケイ・ケイホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 232.5,
-      "float_cap": 98.7,
+      "total_cap": 230.2,
+      "float_cap": 97.7,
       "float_ratio": 42.5,
-      "eff_float_cap": 98.7,
+      "eff_float_cap": 97.7,
       "fiscal_month": 10,
       "risk": "danger",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価99億 < 基準100億"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3415",
-      "name": "ＴＯＫＹＯ　ＢＡＳＥ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 165.7,
-      "float_cap": 99.0,
-      "float_ratio": 59.7,
-      "eff_float_cap": 99.0,
-      "fiscal_month": 1,
-      "risk": "danger",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価99億 < 基準100億"
+        "流通時価98億 < 基準100億"
       ],
       "sup_type": ""
     },
@@ -1994,34 +1215,16 @@
       "code": "2763",
       "name": "エフティグループ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 333.0,
-      "float_cap": 66.6,
+      "total_cap": 329.1,
+      "float_cap": 65.9,
       "float_ratio": 20.0,
-      "eff_float_cap": 66.6,
+      "eff_float_cap": 65.9,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
         "流通比率20% < 基準25%"
-      ],
-      "sup_type": "監理"
-    },
-    {
-      "code": "4384",
-      "name": "ラクスル",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 1126.5,
-      "float_cap": 134.4,
-      "float_ratio": 11.9,
-      "eff_float_cap": 134.4,
-      "fiscal_month": 7,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価134億（基準100億に近接）",
-        "流通比率12% < 基準35%"
       ],
       "sup_type": "監理"
     },
@@ -2062,132 +1265,10 @@
       "sup_type": "監理"
     },
     {
-      "code": "4424",
-      "name": "Ａｍａｚｉａ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 16.4,
-      "float_cap": 5.1,
-      "float_ratio": 31.0,
-      "eff_float_cap": 5.1,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価5億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4052",
-      "name": "フィーチャ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 16.7,
-      "float_cap": 5.4,
-      "float_ratio": 32.4,
-      "eff_float_cap": 5.4,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価5億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4260",
-      "name": "ハイブリッドテクノロジーズ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 32.2,
-      "float_cap": 6.0,
-      "float_ratio": 18.8,
-      "eff_float_cap": 6.0,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）",
-        "流通比率19% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4370",
-      "name": "モビルス",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 19.2,
-      "float_cap": 6.0,
-      "float_ratio": 31.3,
-      "eff_float_cap": 6.0,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4387",
-      "name": "ＺＵＵ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 27.1,
-      "float_cap": 6.0,
-      "float_ratio": 22.1,
-      "eff_float_cap": 6.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）",
-        "流通比率22% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3970",
-      "name": "イノベーション",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 23.9,
-      "float_cap": 6.4,
-      "float_ratio": 26.9,
-      "eff_float_cap": 6.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4437",
-      "name": "ｇｏｏｄｄａｙｓホールディングス",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 80.8,
-      "float_cap": 6.4,
-      "float_ratio": 8.0,
-      "eff_float_cap": 6.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）",
-        "流通比率8% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3477",
       "name": "フォーライフ",
       "market_str": "グロース（内国株式）",
-      "total_cap": 31.5,
+      "total_cap": 31.2,
       "float_cap": 6.5,
       "float_ratio": 20.8,
       "eff_float_cap": 6.5,
@@ -2202,130 +1283,10 @@
       "sup_type": ""
     },
     {
-      "code": "4444",
-      "name": "インフォネット",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 16.3,
-      "float_cap": 6.5,
-      "float_ratio": 40.2,
-      "eff_float_cap": 6.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価6億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4265",
-      "name": "Ｉｎｓｔｉｔｕｔｉｏｎ　ｆｏｒ　ａ　Ｇｌｏｂａｌ　Ｓｏｃｉｅｔｙ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 12.5,
-      "float_cap": 6.7,
-      "float_ratio": 53.2,
-      "eff_float_cap": 6.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3976",
-      "name": "シャノン",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 23.2,
-      "float_cap": 6.8,
-      "float_ratio": 29.3,
-      "eff_float_cap": 6.8,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4017",
-      "name": "クリーマ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 14.6,
-      "float_cap": 7.1,
-      "float_ratio": 48.7,
-      "eff_float_cap": 7.1,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4199",
-      "name": "ワンダープラネット",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 20.4,
-      "float_cap": 7.4,
-      "float_ratio": 36.1,
-      "eff_float_cap": 7.4,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価7億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4056",
-      "name": "ニューラルグループ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 51.6,
-      "float_cap": 7.6,
-      "float_ratio": 14.7,
-      "eff_float_cap": 7.6,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）",
-        "流通比率15% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4394",
-      "name": "エクスモーション",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 26.7,
-      "float_cap": 7.7,
-      "float_ratio": 28.9,
-      "eff_float_cap": 7.7,
-      "fiscal_month": 11,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3261",
       "name": "グランディーズ",
       "market_str": "グロース（内国株式）",
-      "total_cap": 18.2,
+      "total_cap": 18.1,
       "float_cap": 7.8,
       "float_ratio": 42.9,
       "eff_float_cap": 7.8,
@@ -2339,117 +1300,10 @@
       "sup_type": ""
     },
     {
-      "code": "3931",
-      "name": "バリューゴルフ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 33.0,
-      "float_cap": 7.9,
-      "float_ratio": 24.0,
-      "eff_float_cap": 7.9,
-      "fiscal_month": 1,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）",
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4372",
-      "name": "ユミルリンク",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 45.4,
-      "float_cap": 7.9,
-      "float_ratio": 17.3,
-      "eff_float_cap": 7.9,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）",
-        "流通比率17% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3695",
-      "name": "ＧＭＯプロダクトプラットフォーム",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 74.0,
-      "float_cap": 8.5,
-      "float_ratio": 11.5,
-      "eff_float_cap": 8.5,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）",
-        "流通比率12% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3936",
-      "name": "グローバルウェイ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 61.4,
-      "float_cap": 8.5,
-      "float_ratio": 13.8,
-      "eff_float_cap": 8.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）",
-        "流通比率14% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4166",
-      "name": "かっこ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 18.4,
-      "float_cap": 8.5,
-      "float_ratio": 46.0,
-      "eff_float_cap": 8.5,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価8億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4445",
-      "name": "リビン・テクノロジーズ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 41.9,
-      "float_cap": 8.8,
-      "float_ratio": 21.1,
-      "eff_float_cap": 8.8,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億（基準5億に近接）",
-        "流通比率21% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3474",
       "name": "Ｇ－ＦＡＣＴＯＲＹ",
       "market_str": "グロース（内国株式）",
-      "total_cap": 35.8,
+      "total_cap": 35.6,
       "float_cap": 9.0,
       "float_ratio": 25.1,
       "eff_float_cap": 9.0,
@@ -2463,30 +1317,13 @@
       "sup_type": ""
     },
     {
-      "code": "4179",
-      "name": "ジーネクスト",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 16.2,
-      "float_cap": 9.1,
-      "float_ratio": 56.5,
-      "eff_float_cap": 9.1,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2997",
       "name": "ストレージ王",
       "market_str": "グロース（内国株式）",
       "total_cap": 17.8,
-      "float_cap": 9.2,
+      "float_cap": 9.3,
       "float_ratio": 51.8,
-      "eff_float_cap": 9.2,
+      "eff_float_cap": 9.3,
       "fiscal_month": 1,
       "risk": "warning",
       "growth_10yr": false,
@@ -2497,45 +1334,10 @@
       "sup_type": ""
     },
     {
-      "code": "4068",
-      "name": "ベイシス",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 32.1,
-      "float_cap": 9.2,
-      "float_ratio": 28.6,
-      "eff_float_cap": 9.2,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億（基準5億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4270",
-      "name": "ＢｅｅＸ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 41.7,
-      "float_cap": 9.4,
-      "float_ratio": 22.5,
-      "eff_float_cap": 9.4,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価9億（基準5億に近接）",
-        "流通比率22% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3550",
       "name": "スタジオアタオ",
       "market_str": "グロース（内国株式）",
-      "total_cap": 30.9,
+      "total_cap": 30.8,
       "float_cap": 9.6,
       "float_ratio": 31.2,
       "eff_float_cap": 9.6,
@@ -2549,49 +1351,14 @@
       "sup_type": ""
     },
     {
-      "code": "3929",
-      "name": "ソーシャルワイヤー",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 39.0,
-      "float_cap": 9.6,
-      "float_ratio": 24.6,
-      "eff_float_cap": 9.6,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億（基準5億に近接）",
-        "流通比率25% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3974",
-      "name": "ＳＣＡＴ",
+      "code": "2778",
+      "name": "パレモ・ホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 18.1,
+      "total_cap": 14.0,
       "float_cap": 10.0,
-      "float_ratio": 55.0,
+      "float_ratio": 71.1,
       "eff_float_cap": 10.0,
-      "fiscal_month": 10,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4361",
-      "name": "川口化学工業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 17.7,
-      "float_cap": 10.1,
-      "float_ratio": 57.0,
-      "eff_float_cap": 10.1,
-      "fiscal_month": 11,
+      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -2604,7 +1371,7 @@
       "code": "2424",
       "name": "ブラス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.3,
+      "total_cap": 32.6,
       "float_cap": 10.3,
       "float_ratio": 31.7,
       "eff_float_cap": 10.3,
@@ -2614,59 +1381,6 @@
       "listing_years": null,
       "reasons": [
         "流通時価10億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3058",
-      "name": "三洋堂ホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 50.3,
-      "float_cap": 10.5,
-      "float_ratio": 20.9,
-      "eff_float_cap": 10.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億（基準10億に近接）",
-        "流通比率21% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3841",
-      "name": "ジーダット",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 49.1,
-      "float_cap": 10.5,
-      "float_ratio": 21.3,
-      "eff_float_cap": 10.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価10億（基準10億に近接）",
-        "流通比率21% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4197",
-      "name": "アスマーク",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 27.6,
-      "float_cap": 10.6,
-      "float_ratio": 38.5,
-      "eff_float_cap": 10.6,
-      "fiscal_month": 11,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -2688,13 +1402,30 @@
       "sup_type": ""
     },
     {
-      "code": "3559",
-      "name": "ピーバンドットコム",
+      "code": "2687",
+      "name": "シー・ヴイ・エス・ベイエリア",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 21.5,
+      "total_cap": 23.8,
       "float_cap": 10.7,
-      "float_ratio": 49.8,
+      "float_ratio": 45.1,
       "eff_float_cap": 10.7,
+      "fiscal_month": 2,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価11億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2291",
+      "name": "福留ハム",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 18.7,
+      "float_cap": 10.8,
+      "float_ratio": 57.9,
+      "eff_float_cap": 10.8,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -2705,30 +1436,31 @@
       "sup_type": ""
     },
     {
-      "code": "3628",
-      "name": "データホライゾン",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 57.2,
-      "float_cap": 10.7,
-      "float_ratio": 18.6,
-      "eff_float_cap": 10.7,
+      "code": "3058",
+      "name": "三洋堂ホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 51.7,
+      "float_cap": 10.8,
+      "float_ratio": 20.9,
+      "eff_float_cap": 10.8,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通比率19% < 基準25%"
+        "流通時価11億（基準10億に近接）",
+        "流通比率21% < 基準25%"
       ],
       "sup_type": ""
     },
     {
-      "code": "3796",
-      "name": "いい生活",
+      "code": "3559",
+      "name": "ピーバンドットコム",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 39.2,
-      "float_cap": 10.7,
-      "float_ratio": 27.3,
-      "eff_float_cap": 10.7,
+      "total_cap": 21.6,
+      "float_cap": 10.8,
+      "float_ratio": 49.8,
+      "eff_float_cap": 10.8,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -2756,23 +1488,6 @@
       "sup_type": ""
     },
     {
-      "code": "2687",
-      "name": "シー・ヴイ・エス・ベイエリア",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 24.1,
-      "float_cap": 10.9,
-      "float_ratio": 45.1,
-      "eff_float_cap": 10.9,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3536",
       "name": "アクサスホールディングス",
       "market_str": "スタンダード（内国株式）",
@@ -2790,12 +1505,12 @@
       "sup_type": ""
     },
     {
-      "code": "2291",
-      "name": "福留ハム",
+      "code": "3011",
+      "name": "バナーズ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 19.1,
+      "total_cap": 23.7,
       "float_cap": 11.0,
-      "float_ratio": 57.9,
+      "float_ratio": 46.4,
       "eff_float_cap": 11.0,
       "fiscal_month": 3,
       "risk": "warning",
@@ -2807,19 +1522,20 @@
       "sup_type": ""
     },
     {
-      "code": "3011",
-      "name": "バナーズ",
+      "code": "3686",
+      "name": "ディー・エル・イー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.9,
+      "total_cap": 44.8,
       "float_cap": 11.1,
-      "float_ratio": 46.4,
+      "float_ratio": 24.8,
       "eff_float_cap": 11.1,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価11億（基準10億に近接）"
+        "流通時価11億（基準10億に近接）",
+        "流通比率25% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -2827,7 +1543,7 @@
       "code": "3192",
       "name": "白鳩",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 33.1,
+      "total_cap": 33.0,
       "float_cap": 11.2,
       "float_ratio": 34.0,
       "eff_float_cap": 11.2,
@@ -2841,31 +1557,13 @@
       "sup_type": ""
     },
     {
-      "code": "3686",
-      "name": "ディー・エル・イー",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 45.6,
-      "float_cap": 11.3,
-      "float_ratio": 24.8,
-      "eff_float_cap": 11.3,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）",
-        "流通比率25% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3690",
       "name": "イルグルム",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 34.4,
-      "float_cap": 11.3,
+      "total_cap": 34.1,
+      "float_cap": 11.2,
       "float_ratio": 32.9,
-      "eff_float_cap": 11.3,
+      "eff_float_cap": 11.2,
       "fiscal_month": 9,
       "risk": "warning",
       "growth_10yr": false,
@@ -2876,80 +1574,10 @@
       "sup_type": ""
     },
     {
-      "code": "3934",
-      "name": "ベネフィットジャパン",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 128.0,
-      "float_cap": 11.3,
-      "float_ratio": 8.8,
-      "eff_float_cap": 11.3,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）",
-        "流通比率9% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4235",
-      "name": "ウルトラファブリックス・ホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 105.3,
-      "float_cap": 11.4,
-      "float_ratio": 10.8,
-      "eff_float_cap": 11.4,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価11億（基準10億に近接）",
-        "流通比率11% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3958",
-      "name": "笹徳印刷",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 30.4,
-      "float_cap": 11.5,
-      "float_ratio": 37.8,
-      "eff_float_cap": 11.5,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4247",
-      "name": "ポバール興業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 34.1,
-      "float_cap": 11.5,
-      "float_ratio": 33.6,
-      "eff_float_cap": 11.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2666",
       "name": "オートウェーブ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.4,
+      "total_cap": 23.3,
       "float_cap": 11.6,
       "float_ratio": 49.6,
       "eff_float_cap": 11.6,
@@ -2963,48 +1591,14 @@
       "sup_type": ""
     },
     {
-      "code": "3816",
-      "name": "大和コンピューター",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 44.0,
-      "float_cap": 11.6,
-      "float_ratio": 26.4,
-      "eff_float_cap": 11.6,
-      "fiscal_month": 7,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3138",
       "name": "富士山マガジンサービス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 37.7,
-      "float_cap": 11.7,
+      "total_cap": 37.5,
+      "float_cap": 11.6,
       "float_ratio": 30.9,
-      "eff_float_cap": 11.7,
+      "eff_float_cap": 11.6,
       "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3672",
-      "name": "オルトプラス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 29.4,
-      "float_cap": 11.7,
-      "float_ratio": 39.9,
-      "eff_float_cap": 11.7,
-      "fiscal_month": 9,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3017,27 +1611,10 @@
       "code": "3306",
       "name": "日本製麻",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.4,
-      "float_cap": 11.8,
+      "total_cap": 28.0,
+      "float_cap": 11.7,
       "float_ratio": 41.8,
-      "eff_float_cap": 11.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4288",
-      "name": "アズジェント",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 27.7,
-      "float_cap": 11.8,
-      "float_ratio": 42.7,
-      "eff_float_cap": 11.8,
+      "eff_float_cap": 11.7,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3051,10 +1628,10 @@
       "code": "2736",
       "name": "フェスタリアホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 22.9,
-      "float_cap": 11.9,
+      "total_cap": 22.8,
+      "float_cap": 11.8,
       "float_ratio": 51.8,
-      "eff_float_cap": 11.9,
+      "eff_float_cap": 11.8,
       "fiscal_month": 8,
       "risk": "warning",
       "growth_10yr": false,
@@ -3065,48 +1642,14 @@
       "sup_type": ""
     },
     {
-      "code": "3907",
-      "name": "シリコンスタジオ",
+      "code": "3622",
+      "name": "ネットイヤーグループ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 15.9,
-      "float_cap": 11.9,
-      "float_ratio": 75.2,
-      "eff_float_cap": 11.9,
-      "fiscal_month": 11,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4171",
-      "name": "グローバルインフォメーション",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 36.5,
-      "float_cap": 11.9,
-      "float_ratio": 32.6,
-      "eff_float_cap": 11.9,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4335",
-      "name": "ＩＰＳホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 29.1,
-      "float_cap": 11.9,
-      "float_ratio": 40.8,
-      "eff_float_cap": 11.9,
-      "fiscal_month": 6,
+      "total_cap": 36.9,
+      "float_cap": 11.8,
+      "float_ratio": 32.1,
+      "eff_float_cap": 11.8,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3133,48 +1676,14 @@
       "sup_type": ""
     },
     {
-      "code": "3622",
-      "name": "ネットイヤーグループ",
+      "code": "3672",
+      "name": "オルトプラス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 37.4,
-      "float_cap": 12.0,
-      "float_ratio": 32.1,
-      "eff_float_cap": 12.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3991",
-      "name": "ウォンテッドリー",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 97.0,
-      "float_cap": 12.0,
-      "float_ratio": 12.3,
-      "eff_float_cap": 12.0,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率12% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3953",
-      "name": "大村紙業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 27.4,
+      "total_cap": 30.2,
       "float_cap": 12.1,
-      "float_ratio": 44.3,
+      "float_ratio": 39.9,
       "eff_float_cap": 12.1,
-      "fiscal_month": 3,
+      "fiscal_month": 9,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3184,20 +1693,19 @@
       "sup_type": ""
     },
     {
-      "code": "2814",
-      "name": "佐藤食品工業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 109.1,
+      "code": "3628",
+      "name": "データホライゾン",
+      "market_str": "グロース（内国株式）",
+      "total_cap": 65.4,
       "float_cap": 12.2,
-      "float_ratio": 11.2,
+      "float_ratio": 18.6,
       "eff_float_cap": 12.2,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価12億（基準10億に近接）",
-        "流通比率11% < 基準25%"
+        "流通比率19% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -3205,27 +1713,10 @@
       "code": "2479",
       "name": "ジェイテック",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 18.9,
-      "float_cap": 12.3,
+      "total_cap": 19.1,
+      "float_cap": 12.4,
       "float_ratio": 65.3,
-      "eff_float_cap": 12.3,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価12億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3842",
-      "name": "ネクストジェン",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 30.2,
-      "float_cap": 12.3,
-      "float_ratio": 40.8,
-      "eff_float_cap": 12.3,
+      "eff_float_cap": 12.4,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3239,7 +1730,7 @@
       "code": "3041",
       "name": "ビューティカダンホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 22.9,
+      "total_cap": 23.0,
       "float_cap": 12.5,
       "float_ratio": 54.3,
       "eff_float_cap": 12.5,
@@ -3256,7 +1747,7 @@
       "code": "3177",
       "name": "ありがとうサービス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.4,
+      "total_cap": 32.3,
       "float_cap": 12.5,
       "float_ratio": 38.7,
       "eff_float_cap": 12.5,
@@ -3270,30 +1761,31 @@
       "sup_type": ""
     },
     {
-      "code": "3266",
-      "name": "ファンドクリエーショングループ",
+      "code": "2814",
+      "name": "佐藤食品工業",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.4,
+      "total_cap": 112.7,
       "float_cap": 12.7,
-      "float_ratio": 39.2,
+      "float_ratio": 11.2,
       "eff_float_cap": 12.7,
-      "fiscal_month": 11,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価13億（基準10億に近接）"
+        "流通時価13億（基準10億に近接）",
+        "流通比率11% < 基準25%"
       ],
       "sup_type": ""
     },
     {
-      "code": "3370",
-      "name": "フジタコーポレーション",
+      "code": "2876",
+      "name": "デルソーレ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 16.6,
-      "float_cap": 12.7,
-      "float_ratio": 76.3,
-      "eff_float_cap": 12.7,
+      "total_cap": 38.6,
+      "float_cap": 12.8,
+      "float_ratio": 33.0,
+      "eff_float_cap": 12.8,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3304,14 +1796,14 @@
       "sup_type": ""
     },
     {
-      "code": "3935",
-      "name": "エディア",
+      "code": "3266",
+      "name": "ファンドクリエーショングループ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 39.2,
-      "float_cap": 12.7,
-      "float_ratio": 32.5,
-      "eff_float_cap": 12.7,
-      "fiscal_month": 2,
+      "total_cap": 32.7,
+      "float_cap": 12.8,
+      "float_ratio": 39.2,
+      "eff_float_cap": 12.8,
+      "fiscal_month": 11,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3324,10 +1816,10 @@
       "code": "3071",
       "name": "ストリーム",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.7,
-      "float_cap": 12.9,
+      "total_cap": 29.0,
+      "float_cap": 13.0,
       "float_ratio": 44.8,
-      "eff_float_cap": 12.9,
+      "eff_float_cap": 13.0,
       "fiscal_month": 1,
       "risk": "warning",
       "growth_10yr": false,
@@ -3338,12 +1830,12 @@
       "sup_type": ""
     },
     {
-      "code": "2876",
-      "name": "デルソーレ",
+      "code": "3042",
+      "name": "セキュアヴェイル",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 39.5,
+      "total_cap": 23.6,
       "float_cap": 13.1,
-      "float_ratio": 33.0,
+      "float_ratio": 55.6,
       "eff_float_cap": 13.1,
       "fiscal_month": 3,
       "risk": "warning",
@@ -3372,31 +1864,14 @@
       "sup_type": ""
     },
     {
-      "code": "3042",
-      "name": "セキュアヴェイル",
+      "code": "3370",
+      "name": "フジタコーポレーション",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.8,
+      "total_cap": 17.3,
       "float_cap": 13.2,
-      "float_ratio": 55.6,
+      "float_ratio": 76.3,
       "eff_float_cap": 13.2,
       "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価13億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4351",
-      "name": "山田再生系債権回収総合事務所",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.1,
-      "float_cap": 13.2,
-      "float_ratio": 32.2,
-      "eff_float_cap": 13.2,
-      "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3426,10 +1901,10 @@
       "code": "2179",
       "name": "成学社",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.6,
-      "float_cap": 13.6,
+      "total_cap": 41.3,
+      "float_cap": 13.5,
       "float_ratio": 32.7,
-      "eff_float_cap": 13.6,
+      "eff_float_cap": 13.5,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3457,31 +1932,14 @@
       "sup_type": ""
     },
     {
-      "code": "3944",
-      "name": "古林紙工",
+      "code": "2999",
+      "name": "ホームポジション",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 26.3,
-      "float_cap": 13.6,
-      "float_ratio": 51.5,
-      "eff_float_cap": 13.6,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価14億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2139",
-      "name": "中広",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 34.4,
-      "float_cap": 13.9,
-      "float_ratio": 40.5,
-      "eff_float_cap": 13.9,
-      "fiscal_month": 3,
+      "total_cap": 53.6,
+      "float_cap": 13.8,
+      "float_ratio": 25.7,
+      "eff_float_cap": 13.8,
+      "fiscal_month": 8,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3494,7 +1952,7 @@
       "code": "2300",
       "name": "きょくとう",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 26.3,
+      "total_cap": 26.4,
       "float_cap": 13.9,
       "float_ratio": 52.7,
       "eff_float_cap": 13.9,
@@ -3508,27 +1966,10 @@
       "sup_type": ""
     },
     {
-      "code": "2999",
-      "name": "ホームポジション",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 53.9,
-      "float_cap": 13.9,
-      "float_ratio": 25.7,
-      "eff_float_cap": 13.9,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価14億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3607",
       "name": "クラウディアホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.5,
+      "total_cap": 32.6,
       "float_cap": 13.9,
       "float_ratio": 42.7,
       "eff_float_cap": 13.9,
@@ -3542,65 +1983,14 @@
       "sup_type": ""
     },
     {
-      "code": "3682",
-      "name": "エンカレッジ・テクノロジ",
+      "code": "2139",
+      "name": "中広",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.6,
+      "total_cap": 34.5,
       "float_cap": 14.0,
-      "float_ratio": 33.6,
+      "float_ratio": 40.5,
       "eff_float_cap": 14.0,
       "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価14億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4380",
-      "name": "Ｍマート",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 57.7,
-      "float_cap": 14.0,
-      "float_ratio": 24.2,
-      "eff_float_cap": 14.0,
-      "fiscal_month": 1,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3753",
-      "name": "フライトソリューションズ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 20.8,
-      "float_cap": 14.1,
-      "float_ratio": 67.6,
-      "eff_float_cap": 14.1,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価14億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2373",
-      "name": "ケア２１",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 55.9,
-      "float_cap": 14.3,
-      "float_ratio": 25.6,
-      "eff_float_cap": 14.3,
-      "fiscal_month": 10,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3613,10 +2003,10 @@
       "code": "3352",
       "name": "バッファロー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.5,
-      "float_cap": 14.3,
+      "total_cap": 40.8,
+      "float_cap": 14.1,
       "float_ratio": 34.5,
-      "eff_float_cap": 14.3,
+      "eff_float_cap": 14.1,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3627,13 +2017,13 @@
       "sup_type": ""
     },
     {
-      "code": "2376",
-      "name": "サイネックス",
+      "code": "3682",
+      "name": "エンカレッジ・テクノロジ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 36.5,
-      "float_cap": 14.4,
-      "float_ratio": 39.6,
-      "eff_float_cap": 14.4,
+      "total_cap": 42.0,
+      "float_cap": 14.1,
+      "float_ratio": 33.6,
+      "eff_float_cap": 14.1,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3647,11 +2037,45 @@
       "code": "1764",
       "name": "工藤建設",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 40.3,
-      "float_cap": 14.5,
+      "total_cap": 39.8,
+      "float_cap": 14.3,
       "float_ratio": 36.0,
-      "eff_float_cap": 14.5,
+      "eff_float_cap": 14.3,
       "fiscal_month": 6,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価14億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2376",
+      "name": "サイネックス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 36.4,
+      "float_cap": 14.4,
+      "float_ratio": 39.6,
+      "eff_float_cap": 14.4,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価14億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2373",
+      "name": "ケア２１",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 56.5,
+      "float_cap": 14.5,
+      "float_ratio": 25.6,
+      "eff_float_cap": 14.5,
+      "fiscal_month": 10,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3678,83 +2102,14 @@
       "sup_type": ""
     },
     {
-      "code": "3712",
-      "name": "情報企画",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 150.0,
-      "float_cap": 14.6,
-      "float_ratio": 9.7,
-      "eff_float_cap": 14.6,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）",
-        "流通比率10% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4398",
-      "name": "ブロードバンドセキュリティ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 53.8,
-      "float_cap": 14.6,
-      "float_ratio": 27.1,
-      "eff_float_cap": 14.6,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "1788",
       "name": "三東工業社",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 28.1,
-      "float_cap": 14.7,
+      "total_cap": 28.8,
+      "float_cap": 15.0,
       "float_ratio": 52.1,
-      "eff_float_cap": 14.7,
+      "eff_float_cap": 15.0,
       "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4388",
-      "name": "エーアイ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 24.3,
-      "float_cap": 14.7,
-      "float_ratio": 60.4,
-      "eff_float_cap": 14.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4334",
-      "name": "ユークス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 33.6,
-      "float_cap": 14.8,
-      "float_ratio": 44.1,
-      "eff_float_cap": 14.8,
-      "fiscal_month": 1,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3781,19 +2136,36 @@
       "sup_type": ""
     },
     {
-      "code": "4415",
-      "name": "ブロードエンタープライズ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 71.3,
+      "code": "3577",
+      "name": "東海染工",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 29.5,
       "float_cap": 15.1,
-      "float_ratio": 21.2,
+      "float_ratio": 51.0,
       "eff_float_cap": 15.1,
-      "fiscal_month": 12,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通比率21% < 基準25%"
+        "流通時価15億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "3647",
+      "name": "アスリナ",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 25.4,
+      "float_cap": 15.2,
+      "float_ratio": 59.9,
+      "eff_float_cap": 15.2,
+      "fiscal_month": 8,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価15億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -3801,10 +2173,10 @@
       "code": "3024",
       "name": "クリエイト",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 43.0,
-      "float_cap": 15.2,
+      "total_cap": 43.1,
+      "float_cap": 15.3,
       "float_ratio": 35.4,
-      "eff_float_cap": 15.2,
+      "eff_float_cap": 15.3,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -3818,46 +2190,11 @@
       "code": "3238",
       "name": "セントラル総合開発",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 35.1,
-      "float_cap": 15.3,
+      "total_cap": 35.3,
+      "float_cap": 15.4,
       "float_ratio": 43.5,
-      "eff_float_cap": 15.3,
+      "eff_float_cap": 15.4,
       "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3121",
-      "name": "マーチャント・バンカーズ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 62.2,
-      "float_cap": 15.4,
-      "float_ratio": 24.8,
-      "eff_float_cap": 15.4,
-      "fiscal_month": 10,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価15億（基準10億に近接）",
-        "流通比率25% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3996",
-      "name": "サインポスト",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 29.4,
-      "float_cap": 15.4,
-      "float_ratio": 52.3,
-      "eff_float_cap": 15.4,
-      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -3884,19 +2221,20 @@
       "sup_type": ""
     },
     {
-      "code": "3647",
-      "name": "アスリナ",
+      "code": "3121",
+      "name": "マーチャント・バンカーズ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 25.9,
-      "float_cap": 15.5,
-      "float_ratio": 59.9,
-      "eff_float_cap": 15.5,
-      "fiscal_month": 8,
+      "total_cap": 63.1,
+      "float_cap": 15.7,
+      "float_ratio": 24.8,
+      "eff_float_cap": 15.7,
+      "fiscal_month": 10,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価16億（基準10億に近接）"
+        "流通時価16億（基準10億に近接）",
+        "流通比率25% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -3904,10 +2242,10 @@
       "code": "2122",
       "name": "インタースペース",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 79.6,
-      "float_cap": 15.6,
+      "total_cap": 80.7,
+      "float_cap": 15.9,
       "float_ratio": 19.7,
-      "eff_float_cap": 15.6,
+      "eff_float_cap": 15.9,
       "fiscal_month": 9,
       "risk": "warning",
       "growth_10yr": false,
@@ -3919,99 +2257,14 @@
       "sup_type": ""
     },
     {
-      "code": "4124",
-      "name": "大阪油化工業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.4,
-      "float_cap": 15.6,
-      "float_ratio": 66.7,
-      "eff_float_cap": 15.6,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価16億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3577",
-      "name": "東海染工",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 30.9,
-      "float_cap": 15.7,
-      "float_ratio": 51.0,
-      "eff_float_cap": 15.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価16億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4102",
-      "name": "丸尾カルシウム",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 31.2,
-      "float_cap": 15.9,
-      "float_ratio": 51.0,
-      "eff_float_cap": 15.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価16億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2747",
       "name": "北雄ラッキー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 38.8,
-      "float_cap": 16.1,
+      "total_cap": 39.2,
+      "float_cap": 16.3,
       "float_ratio": 41.6,
-      "eff_float_cap": 16.1,
+      "eff_float_cap": 16.3,
       "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価16億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3181",
-      "name": "買取王国",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 35.8,
-      "float_cap": 16.1,
-      "float_ratio": 45.0,
-      "eff_float_cap": 16.1,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価16億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2693",
-      "name": "ＹＫＴ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 29.0,
-      "float_cap": 16.2,
-      "float_ratio": 55.7,
-      "eff_float_cap": 16.2,
-      "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4024,10 +2277,10 @@
       "code": "2449",
       "name": "プラップジャパン",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 48.2,
-      "float_cap": 16.4,
+      "total_cap": 48.3,
+      "float_cap": 16.5,
       "float_ratio": 34.1,
-      "eff_float_cap": 16.4,
+      "eff_float_cap": 16.5,
       "fiscal_month": 8,
       "risk": "warning",
       "growth_10yr": false,
@@ -4038,54 +2291,19 @@
       "sup_type": ""
     },
     {
-      "code": "3804",
-      "name": "システム　ディ",
+      "code": "3181",
+      "name": "買取王国",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 98.7,
-      "float_cap": 16.4,
-      "float_ratio": 16.6,
-      "eff_float_cap": 16.4,
-      "fiscal_month": 10,
+      "total_cap": 36.6,
+      "float_cap": 16.5,
+      "float_ratio": 45.0,
+      "eff_float_cap": 16.5,
+      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価16億（基準10億に近接）",
-        "流通比率17% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3851",
-      "name": "日本一ソフトウェア",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 42.1,
-      "float_cap": 16.6,
-      "float_ratio": 39.5,
-      "eff_float_cap": 16.6,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3747",
-      "name": "インタートレード",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.5,
-      "float_cap": 16.7,
-      "float_ratio": 40.2,
-      "eff_float_cap": 16.7,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
+        "流通時価16億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -4110,7 +2328,7 @@
       "code": "2404",
       "name": "鉄人化ホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 75.4,
+      "total_cap": 75.1,
       "float_cap": 17.0,
       "float_ratio": 22.6,
       "eff_float_cap": 17.0,
@@ -4128,78 +2346,10 @@
       "code": "3372",
       "name": "関門海",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 30.0,
-      "float_cap": 17.0,
+      "total_cap": 30.3,
+      "float_cap": 17.2,
       "float_ratio": 56.8,
-      "eff_float_cap": 17.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3802",
-      "name": "エコミック",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 16.1,
-      "float_cap": 17.0,
-      "float_ratio": 105.8,
-      "eff_float_cap": 17.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3928",
-      "name": "マイネット",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 22.7,
-      "float_cap": 17.0,
-      "float_ratio": 74.9,
-      "eff_float_cap": 17.0,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4240",
-      "name": "クラスターテクノロジー",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 23.9,
-      "float_cap": 17.0,
-      "float_ratio": 71.2,
-      "eff_float_cap": 17.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2351",
-      "name": "ＡＳＪ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.5,
-      "float_cap": 17.1,
-      "float_ratio": 52.6,
-      "eff_float_cap": 17.1,
+      "eff_float_cap": 17.2,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -4227,31 +2377,14 @@
       "sup_type": ""
     },
     {
-      "code": "3913",
-      "name": "ＧｒｅｅｎＢｅｅ",
+      "code": "1380",
+      "name": "秋川牧園",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 24.4,
-      "float_cap": 17.4,
-      "float_ratio": 71.3,
-      "eff_float_cap": 17.4,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価17億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3744",
-      "name": "サイオス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 39.3,
+      "total_cap": 41.7,
       "float_cap": 17.5,
-      "float_ratio": 44.5,
+      "float_ratio": 42.1,
       "eff_float_cap": 17.5,
-      "fiscal_month": 12,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4264,80 +2397,11 @@
       "code": "2341",
       "name": "アルバイトタイムス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 33.8,
-      "float_cap": 17.6,
+      "total_cap": 34.0,
+      "float_cap": 17.7,
       "float_ratio": 51.9,
-      "eff_float_cap": 17.6,
+      "eff_float_cap": 17.7,
       "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価18億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "1380",
-      "name": "秋川牧園",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 42.1,
-      "float_cap": 17.7,
-      "float_ratio": 42.1,
-      "eff_float_cap": 17.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価18億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3945",
-      "name": "スーパーバッグ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 32.9,
-      "float_cap": 17.7,
-      "float_ratio": 53.7,
-      "eff_float_cap": 17.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価18億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4439",
-      "name": "東名",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 209.7,
-      "float_cap": 17.7,
-      "float_ratio": 8.5,
-      "eff_float_cap": 17.7,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価18億（基準10億に近接）",
-        "流通比率8% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3035",
-      "name": "ケイティケイ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.7,
-      "float_cap": 17.9,
-      "float_ratio": 42.9,
-      "eff_float_cap": 17.9,
-      "fiscal_month": 8,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4350,7 +2414,7 @@
       "code": "3293",
       "name": "アズマハウス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 62.1,
+      "total_cap": 62.0,
       "float_cap": 17.9,
       "float_ratio": 28.8,
       "eff_float_cap": 17.9,
@@ -4364,14 +2428,14 @@
       "sup_type": ""
     },
     {
-      "code": "3358",
-      "name": "Ｔｒａｉｌｈｅａｄ　Ｇｌｏｂａｌ　Ｈｏｌｄｉｎｇｓ",
+      "code": "3035",
+      "name": "ケイティケイ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 34.9,
+      "total_cap": 41.9,
       "float_cap": 18.0,
-      "float_ratio": 51.6,
+      "float_ratio": 42.9,
       "eff_float_cap": 18.0,
-      "fiscal_month": 3,
+      "fiscal_month": 8,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4384,11 +2448,28 @@
       "code": "1446",
       "name": "キャンディル",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 48.9,
+      "total_cap": 49.0,
       "float_cap": 18.1,
       "float_ratio": 37.0,
       "eff_float_cap": 18.1,
       "fiscal_month": 9,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価18億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2351",
+      "name": "ＡＳＪ",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 34.6,
+      "float_cap": 18.2,
+      "float_ratio": 52.6,
+      "eff_float_cap": 18.2,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4415,19 +2496,19 @@
       "sup_type": ""
     },
     {
-      "code": "3426",
-      "name": "アトムリビンテック",
+      "code": "3358",
+      "name": "Ｔｒａｉｌｈｅａｄ　Ｇｌｏｂａｌ　Ｈｏｌｄｉｎｇｓ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 51.5,
-      "float_cap": 18.4,
-      "float_ratio": 35.8,
-      "eff_float_cap": 18.4,
-      "fiscal_month": 6,
+      "total_cap": 35.9,
+      "float_cap": 18.6,
+      "float_ratio": 51.6,
+      "eff_float_cap": 18.6,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価18億（基準10億に近接）"
+        "流通時価19億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -4449,10 +2530,27 @@
       "sup_type": ""
     },
     {
+      "code": "3426",
+      "name": "アトムリビンテック",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 52.5,
+      "float_cap": 18.8,
+      "float_ratio": 35.8,
+      "eff_float_cap": 18.8,
+      "fiscal_month": 6,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価19億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "3490",
       "name": "アズ企画設計",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 42.2,
+      "total_cap": 42.4,
       "float_cap": 18.8,
       "float_ratio": 44.4,
       "eff_float_cap": 18.8,
@@ -4466,65 +2564,31 @@
       "sup_type": ""
     },
     {
-      "code": "3896",
-      "name": "阿波製紙",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 45.0,
-      "float_cap": 18.9,
-      "float_ratio": 42.0,
-      "eff_float_cap": 18.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価19億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4440",
-      "name": "ヴィッツ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 48.6,
-      "float_cap": 18.9,
-      "float_ratio": 38.9,
-      "eff_float_cap": 18.9,
-      "fiscal_month": 8,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価19億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3422",
-      "name": "Ｊ－ＭＡＸ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 48.4,
-      "float_cap": 19.0,
-      "float_ratio": 39.3,
-      "eff_float_cap": 19.0,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価19億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2215",
       "name": "第一屋製パン",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.1,
-      "float_cap": 19.1,
+      "total_cap": 41.0,
+      "float_cap": 19.0,
       "float_ratio": 46.4,
-      "eff_float_cap": 19.1,
+      "eff_float_cap": 19.0,
       "fiscal_month": 12,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価19億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "1711",
+      "name": "ＳＤＳホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 26.3,
+      "float_cap": 19.1,
+      "float_ratio": 72.7,
+      "eff_float_cap": 19.1,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4537,28 +2601,11 @@
       "code": "3241",
       "name": "ウィル",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 68.5,
+      "total_cap": 68.6,
       "float_cap": 19.1,
       "float_ratio": 27.9,
       "eff_float_cap": 19.1,
       "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価19億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3768",
-      "name": "リスクモンスター",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 41.3,
-      "float_cap": 19.1,
-      "float_ratio": 46.2,
-      "eff_float_cap": 19.1,
-      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4585,14 +2632,14 @@
       "sup_type": ""
     },
     {
-      "code": "4287",
-      "name": "ジャストプランニング",
+      "code": "3422",
+      "name": "Ｊ－ＭＡＸ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 57.2,
-      "float_cap": 19.3,
-      "float_ratio": 33.7,
-      "eff_float_cap": 19.3,
-      "fiscal_month": 1,
+      "total_cap": 48.8,
+      "float_cap": 19.2,
+      "float_ratio": 39.3,
+      "eff_float_cap": 19.2,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -4602,19 +2649,19 @@
       "sup_type": ""
     },
     {
-      "code": "1711",
-      "name": "ＳＤＳホールディングス",
+      "code": "2454",
+      "name": "オールアバウト",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 26.8,
-      "float_cap": 19.5,
-      "float_ratio": 72.7,
-      "eff_float_cap": 19.5,
+      "total_cap": 51.6,
+      "float_cap": 19.3,
+      "float_ratio": 37.3,
+      "eff_float_cap": 19.3,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価20億（基準10億に近接）"
+        "流通時価19億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -4622,118 +2669,16 @@
       "code": "3280",
       "name": "エストラスト",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 57.4,
-      "float_cap": 19.5,
+      "total_cap": 57.1,
+      "float_cap": 19.4,
       "float_ratio": 34.0,
-      "eff_float_cap": 19.5,
+      "eff_float_cap": 19.4,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3750",
-      "name": "ＡＤＲ１２０Ｓ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 72.3,
-      "float_cap": 19.5,
-      "float_ratio": 27.0,
-      "eff_float_cap": 19.5,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "1443",
-      "name": "技研ホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 45.5,
-      "float_cap": 19.6,
-      "float_ratio": 43.2,
-      "eff_float_cap": 19.6,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2454",
-      "name": "オールアバウト",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 52.7,
-      "float_cap": 19.7,
-      "float_ratio": 37.3,
-      "eff_float_cap": 19.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3933",
-      "name": "チエル",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 53.4,
-      "float_cap": 19.7,
-      "float_ratio": 36.9,
-      "eff_float_cap": 19.7,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "1994",
-      "name": "高橋カーテンウォール工業",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 44.6,
-      "float_cap": 19.8,
-      "float_ratio": 44.4,
-      "eff_float_cap": 19.8,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4241",
-      "name": "アテクト",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 35.8,
-      "float_cap": 19.9,
-      "float_ratio": 55.6,
-      "eff_float_cap": 19.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価20億（基準10億に近接）"
+        "流通時価19億（基準10億に近接）"
       ],
       "sup_type": ""
     },
@@ -4741,10 +2686,10 @@
       "code": "3566",
       "name": "ユニフォームネクスト",
       "market_str": "グロース（内国株式）",
-      "total_cap": 93.7,
-      "float_cap": 21.8,
+      "total_cap": 88.1,
+      "float_cap": 20.5,
       "float_ratio": 23.2,
-      "eff_float_cap": 21.8,
+      "eff_float_cap": 20.5,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
@@ -4755,19 +2700,19 @@
       "sup_type": ""
     },
     {
-      "code": "4262",
-      "name": "ニフティライフスタイル",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 91.5,
-      "float_cap": 22.5,
-      "float_ratio": 24.6,
-      "eff_float_cap": 22.5,
-      "fiscal_month": 3,
+      "code": "3080",
+      "name": "ジェーソン",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 96.9,
+      "float_cap": 22.6,
+      "float_ratio": 23.4,
+      "eff_float_cap": 22.6,
+      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通比率25% < 基準25%"
+        "流通比率23% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -4775,10 +2720,10 @@
       "code": "2991",
       "name": "ランドネット",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 139.9,
-      "float_cap": 22.7,
+      "total_cap": 141.3,
+      "float_cap": 23.0,
       "float_ratio": 16.3,
-      "eff_float_cap": 22.7,
+      "eff_float_cap": 23.0,
       "fiscal_month": 7,
       "risk": "warning",
       "growth_10yr": false,
@@ -4789,30 +2734,13 @@
       "sup_type": ""
     },
     {
-      "code": "3080",
-      "name": "ジェーソン",
+      "code": "3683",
+      "name": "サイバーリンクス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 97.1,
-      "float_cap": 22.7,
-      "float_ratio": 23.4,
-      "eff_float_cap": 22.7,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率23% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4356",
-      "name": "応用技術",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 103.8,
-      "float_cap": 24.5,
-      "float_ratio": 23.6,
-      "eff_float_cap": 24.5,
+      "total_cap": 110.3,
+      "float_cap": 26.3,
+      "float_ratio": 23.8,
+      "eff_float_cap": 26.3,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
@@ -4826,10 +2754,10 @@
       "code": "2981",
       "name": "ランディックス",
       "market_str": "グロース（内国株式）",
-      "total_cap": 122.8,
-      "float_cap": 25.7,
+      "total_cap": 127.9,
+      "float_cap": 26.7,
       "float_ratio": 20.9,
-      "eff_float_cap": 25.7,
+      "eff_float_cap": 26.7,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -4840,47 +2768,13 @@
       "sup_type": ""
     },
     {
-      "code": "4175",
-      "name": "ｃｏｌｙ",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 109.8,
-      "float_cap": 25.8,
-      "float_ratio": 23.5,
-      "eff_float_cap": 25.8,
-      "fiscal_month": 1,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3683",
-      "name": "サイバーリンクス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 110.6,
-      "float_cap": 26.4,
-      "float_ratio": 23.8,
-      "eff_float_cap": 26.4,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率24% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2936",
       "name": "ベースフード",
       "market_str": "グロース（内国株式）",
-      "total_cap": 161.3,
-      "float_cap": 29.1,
+      "total_cap": 161.8,
+      "float_cap": 29.2,
       "float_ratio": 18.0,
-      "eff_float_cap": 29.1,
+      "eff_float_cap": 29.2,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
@@ -4894,10 +2788,10 @@
       "code": "1450",
       "name": "ＴＡＮＡＫＥＮ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 124.0,
-      "float_cap": 30.3,
+      "total_cap": 127.9,
+      "float_cap": 31.3,
       "float_ratio": 24.5,
-      "eff_float_cap": 30.3,
+      "eff_float_cap": 31.3,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -4911,10 +2805,10 @@
       "code": "1431",
       "name": "Ｌｉｂ　Ｗｏｒｋ",
       "market_str": "グロース（内国株式）",
-      "total_cap": 151.5,
-      "float_cap": 34.3,
+      "total_cap": 151.0,
+      "float_cap": 34.2,
       "float_ratio": 22.6,
-      "eff_float_cap": 34.3,
+      "eff_float_cap": 34.2,
       "fiscal_month": 6,
       "risk": "warning",
       "growth_10yr": false,
@@ -4928,10 +2822,10 @@
       "code": "2152",
       "name": "幼児活動研究会",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 163.1,
-      "float_cap": 34.8,
+      "total_cap": 166.4,
+      "float_cap": 35.5,
       "float_ratio": 21.3,
-      "eff_float_cap": 34.8,
+      "eff_float_cap": 35.5,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -4942,30 +2836,13 @@
       "sup_type": ""
     },
     {
-      "code": "3723",
-      "name": "日本ファルコム",
-      "market_str": "グロース（内国株式）",
-      "total_cap": 215.8,
-      "float_cap": 36.9,
-      "float_ratio": 17.1,
-      "eff_float_cap": 36.9,
-      "fiscal_month": 9,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率17% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2970",
       "name": "ＧＬＣ　ＧＲＯＵＰ",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 184.7,
-      "float_cap": 40.3,
+      "total_cap": 183.5,
+      "float_cap": 40.1,
       "float_ratio": 21.8,
-      "eff_float_cap": 40.3,
+      "eff_float_cap": 40.1,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
@@ -4979,10 +2856,10 @@
       "code": "3178",
       "name": "チムニー",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 230.0,
-      "float_cap": 47.8,
+      "total_cap": 229.2,
+      "float_cap": 47.6,
       "float_ratio": 20.8,
-      "eff_float_cap": 47.8,
+      "eff_float_cap": 47.6,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -4996,10 +2873,10 @@
       "code": "2003",
       "name": "日東富士製粉",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 643.2,
-      "float_cap": 48.5,
+      "total_cap": 648.6,
+      "float_cap": 48.9,
       "float_ratio": 7.5,
-      "eff_float_cap": 48.5,
+      "eff_float_cap": 48.9,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5010,36 +2887,36 @@
       "sup_type": ""
     },
     {
-      "code": "2393",
-      "name": "日本ケアサプライ",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 359.0,
-      "float_cap": 78.8,
-      "float_ratio": 22.0,
-      "eff_float_cap": 78.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率22% < 基準25%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3159",
       "name": "丸善ＣＨＩホールディングス",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 321.1,
-      "float_cap": 79.9,
+      "total_cap": 323.0,
+      "float_cap": 80.4,
       "float_ratio": 24.9,
-      "eff_float_cap": 79.9,
+      "eff_float_cap": 80.4,
       "fiscal_month": 1,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
         "流通比率25% < 基準25%"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2393",
+      "name": "日本ケアサプライ",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 366.6,
+      "float_cap": 80.5,
+      "float_ratio": 22.0,
+      "eff_float_cap": 80.5,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通比率22% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -5061,54 +2938,19 @@
       "sup_type": ""
     },
     {
-      "code": "3983",
-      "name": "オロ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 312.4,
-      "float_cap": 100.9,
-      "float_ratio": 32.3,
-      "eff_float_cap": 100.9,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価101億（基準100億に近接）",
-        "流通比率32% < 基準35%"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2935",
-      "name": "ピックルスホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 137.6,
-      "float_cap": 101.2,
-      "float_ratio": 73.6,
-      "eff_float_cap": 101.2,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価101億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2120",
       "name": "ＬＩＦＵＬＬ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 249.9,
-      "float_cap": 101.4,
+      "total_cap": 247.3,
+      "float_cap": 100.4,
       "float_ratio": 40.6,
-      "eff_float_cap": 101.4,
+      "eff_float_cap": 100.4,
       "fiscal_month": 9,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価101億（基準100億に近接）"
+        "流通時価100億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5116,33 +2958,50 @@
       "code": "2148",
       "name": "アイティメディア",
       "market_str": "プライム（内国株式）",
-      "total_cap": 253.5,
-      "float_cap": 101.9,
+      "total_cap": 250.2,
+      "float_cap": 100.6,
       "float_ratio": 40.2,
-      "eff_float_cap": 101.9,
+      "eff_float_cap": 100.6,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価102億（基準100億に近接）"
+        "流通時価101億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "4344",
-      "name": "ソースネクスト",
+      "code": "2491",
+      "name": "バリューコマース",
       "market_str": "プライム（内国株式）",
-      "total_cap": 181.2,
-      "float_cap": 103.5,
-      "float_ratio": 57.1,
-      "eff_float_cap": 103.5,
+      "total_cap": 103.0,
+      "float_cap": 100.8,
+      "float_ratio": 97.9,
+      "eff_float_cap": 100.8,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価104億（基準100億に近接）"
+        "流通時価101億（基準100億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "2935",
+      "name": "ピックルスホールディングス",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 137.1,
+      "float_cap": 100.8,
+      "float_ratio": 73.6,
+      "eff_float_cap": 100.8,
+      "fiscal_month": 2,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価101億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5167,33 +3026,16 @@
       "code": "2378",
       "name": "ルネサンス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 187.6,
-      "float_cap": 104.6,
+      "total_cap": 186.7,
+      "float_cap": 104.1,
       "float_ratio": 55.7,
-      "eff_float_cap": 104.6,
+      "eff_float_cap": 104.1,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価105億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2491",
-      "name": "バリューコマース",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 107.3,
-      "float_cap": 105.1,
-      "float_ratio": 97.9,
-      "eff_float_cap": 105.1,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価105億（基準100億に近接）"
+        "流通時価104億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5218,28 +3060,11 @@
       "code": "3276",
       "name": "ＪＰＭＣ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 215.2,
-      "float_cap": 105.2,
+      "total_cap": 221.7,
+      "float_cap": 108.4,
       "float_ratio": 48.9,
-      "eff_float_cap": 105.2,
+      "eff_float_cap": 108.4,
       "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価105億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3915",
-      "name": "テラスカイ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 255.2,
-      "float_cap": 107.7,
-      "float_ratio": 42.2,
-      "eff_float_cap": 107.7,
-      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5249,14 +3074,14 @@
       "sup_type": ""
     },
     {
-      "code": "3154",
-      "name": "メディアスホールディングス",
+      "code": "3662",
+      "name": "エイチームホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 185.0,
-      "float_cap": 108.8,
-      "float_ratio": 58.8,
-      "eff_float_cap": 108.8,
-      "fiscal_month": 6,
+      "total_cap": 184.2,
+      "float_cap": 109.2,
+      "float_ratio": 59.3,
+      "eff_float_cap": 109.2,
+      "fiscal_month": 7,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5266,14 +3091,14 @@
       "sup_type": ""
     },
     {
-      "code": "3662",
-      "name": "エイチームホールディングス",
+      "code": "3154",
+      "name": "メディアスホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 184.9,
+      "total_cap": 186.3,
       "float_cap": 109.6,
-      "float_ratio": 59.3,
+      "float_ratio": 58.8,
       "eff_float_cap": 109.6,
-      "fiscal_month": 7,
+      "fiscal_month": 6,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5283,30 +3108,13 @@
       "sup_type": ""
     },
     {
-      "code": "3696",
-      "name": "セレス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 230.9,
-      "float_cap": 112.7,
-      "float_ratio": 48.8,
-      "eff_float_cap": 112.7,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価113億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2475",
       "name": "ＷＤＢホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 285.8,
-      "float_cap": 114.2,
+      "total_cap": 285.3,
+      "float_cap": 113.9,
       "float_ratio": 39.9,
-      "eff_float_cap": 114.2,
+      "eff_float_cap": 113.9,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5317,31 +3125,31 @@
       "sup_type": ""
     },
     {
-      "code": "3968",
-      "name": "セグエグループ",
+      "code": "3486",
+      "name": "グローバル・リンク・マネジメント",
       "market_str": "プライム（内国株式）",
-      "total_cap": 198.1,
-      "float_cap": 116.9,
-      "float_ratio": 59.0,
-      "eff_float_cap": 116.9,
+      "total_cap": 296.8,
+      "float_cap": 118.9,
+      "float_ratio": 40.1,
+      "eff_float_cap": 118.9,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価117億（基準100億に近接）"
+        "流通時価119億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "3486",
-      "name": "グローバル・リンク・マネジメント",
+      "code": "3109",
+      "name": "シキボウ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 301.8,
+      "total_cap": 131.6,
       "float_cap": 121.3,
-      "float_ratio": 40.2,
+      "float_ratio": 92.1,
       "eff_float_cap": 121.3,
-      "fiscal_month": 12,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5351,14 +3159,14 @@
       "sup_type": ""
     },
     {
-      "code": "3109",
-      "name": "シキボウ",
+      "code": "2929",
+      "name": "ファーマフーズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 132.4,
-      "float_cap": 122.0,
-      "float_ratio": 92.1,
-      "eff_float_cap": 122.0,
-      "fiscal_month": 3,
+      "total_cap": 181.8,
+      "float_cap": 122.1,
+      "float_ratio": 67.2,
+      "eff_float_cap": 122.1,
+      "fiscal_month": 7,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5371,43 +3179,9 @@
       "code": "3649",
       "name": "ファインデックス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 190.9,
-      "float_cap": 122.6,
-      "float_ratio": 64.2,
-      "eff_float_cap": 122.6,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価123億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "2929",
-      "name": "ファーマフーズ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 183.8,
-      "float_cap": 123.5,
-      "float_ratio": 67.2,
-      "eff_float_cap": 123.5,
-      "fiscal_month": 7,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価124億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4251",
-      "name": "恵和",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 232.7,
+      "total_cap": 192.3,
       "float_cap": 123.6,
-      "float_ratio": 53.1,
+      "float_ratio": 64.2,
       "eff_float_cap": 123.6,
       "fiscal_month": 12,
       "risk": "warning",
@@ -5419,53 +3193,19 @@
       "sup_type": ""
     },
     {
-      "code": "3922",
-      "name": "ＰＲ　ＴＩＭＥＳ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 308.3,
-      "float_cap": 124.8,
-      "float_ratio": 40.5,
-      "eff_float_cap": 124.8,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価125億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4410",
-      "name": "ハリマ化成グループ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 224.1,
-      "float_cap": 125.4,
-      "float_ratio": 55.9,
-      "eff_float_cap": 125.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価125億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2359",
       "name": "コア",
       "market_str": "プライム（内国株式）",
-      "total_cap": 287.2,
-      "float_cap": 125.9,
+      "total_cap": 288.9,
+      "float_cap": 126.7,
       "float_ratio": 43.9,
-      "eff_float_cap": 125.9,
+      "eff_float_cap": 126.7,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価126億（基準100億に近接）"
+        "流通時価127億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5473,10 +3213,10 @@
       "code": "2329",
       "name": "東北新社",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 826.1,
-      "float_cap": 130.0,
+      "total_cap": 823.4,
+      "float_cap": 129.5,
       "float_ratio": 15.7,
-      "eff_float_cap": 130.0,
+      "eff_float_cap": 129.5,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5504,13 +3244,30 @@
       "sup_type": ""
     },
     {
+      "code": "2301",
+      "name": "学情",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 214.6,
+      "float_cap": 132.7,
+      "float_ratio": 61.8,
+      "eff_float_cap": 132.7,
+      "fiscal_month": 10,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価133億（基準100億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "2882",
       "name": "イートアンドホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 225.3,
-      "float_cap": 134.2,
+      "total_cap": 225.6,
+      "float_cap": 134.3,
       "float_ratio": 59.6,
-      "eff_float_cap": 134.2,
+      "eff_float_cap": 134.3,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
@@ -5521,14 +3278,14 @@
       "sup_type": ""
     },
     {
-      "code": "2301",
-      "name": "学情",
+      "code": "2266",
+      "name": "六甲バター",
       "market_str": "プライム（内国株式）",
-      "total_cap": 218.5,
-      "float_cap": 135.1,
-      "float_ratio": 61.8,
-      "eff_float_cap": 135.1,
-      "fiscal_month": 10,
+      "total_cap": 218.2,
+      "float_cap": 135.0,
+      "float_ratio": 61.9,
+      "eff_float_cap": 135.0,
+      "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5538,14 +3295,14 @@
       "sup_type": ""
     },
     {
-      "code": "2266",
-      "name": "六甲バター",
+      "code": "3393",
+      "name": "スターティアホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 219.0,
-      "float_cap": 135.5,
-      "float_ratio": 61.9,
-      "eff_float_cap": 135.5,
-      "fiscal_month": 12,
+      "total_cap": 259.0,
+      "float_cap": 136.4,
+      "float_ratio": 52.7,
+      "eff_float_cap": 136.4,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -5572,70 +3329,19 @@
       "sup_type": ""
     },
     {
-      "code": "3393",
-      "name": "スターティアホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 259.8,
-      "float_cap": 136.8,
-      "float_ratio": 52.7,
-      "eff_float_cap": 136.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価137億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4228",
-      "name": "積水化成品工業",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 228.9,
-      "float_cap": 137.1,
-      "float_ratio": 59.9,
-      "eff_float_cap": 137.1,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価137億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3548",
       "name": "バロックジャパンリミテッド",
       "market_str": "プライム（内国株式）",
-      "total_cap": 262.9,
-      "float_cap": 137.9,
+      "total_cap": 261.9,
+      "float_cap": 137.3,
       "float_ratio": 52.4,
-      "eff_float_cap": 137.9,
+      "eff_float_cap": 137.3,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価138億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3877",
-      "name": "中越パルプ工業",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 254.3,
-      "float_cap": 138.4,
-      "float_ratio": 54.4,
-      "eff_float_cap": 138.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価138億（基準100億に近接）"
+        "流通時価137億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5643,50 +3349,16 @@
       "code": "2163",
       "name": "アルトナー",
       "market_str": "プライム（内国株式）",
-      "total_cap": 203.5,
-      "float_cap": 142.6,
+      "total_cap": 202.2,
+      "float_cap": 141.7,
       "float_ratio": 70.1,
-      "eff_float_cap": 142.6,
+      "eff_float_cap": 141.7,
       "fiscal_month": 1,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価143億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3984",
-      "name": "ユーザーローカル",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 286.7,
-      "float_cap": 143.8,
-      "float_ratio": 50.1,
-      "eff_float_cap": 143.8,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価144億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4310",
-      "name": "ドリームインキュベータ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 219.3,
-      "float_cap": 144.8,
-      "float_ratio": 66.0,
-      "eff_float_cap": 144.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価145億（基準100億に近接）"
+        "流通時価142億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5711,16 +3383,16 @@
       "code": "2533",
       "name": "オエノンホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 239.5,
-      "float_cap": 150.8,
+      "total_cap": 238.3,
+      "float_cap": 150.1,
       "float_ratio": 63.0,
-      "eff_float_cap": 150.8,
+      "eff_float_cap": 150.1,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価151億（基準100億に近接）"
+        "流通時価150億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5728,16 +3400,16 @@
       "code": "2753",
       "name": "あみやき亭",
       "market_str": "プライム（内国株式）",
-      "total_cap": 275.3,
-      "float_cap": 155.8,
+      "total_cap": 274.7,
+      "float_cap": 155.4,
       "float_ratio": 56.6,
-      "eff_float_cap": 155.8,
+      "eff_float_cap": 155.4,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価156億（基準100億に近接）"
+        "流通時価155億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5745,27 +3417,44 @@
       "code": "3580",
       "name": "小松マテーレ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 279.8,
-      "float_cap": 155.9,
+      "total_cap": 281.0,
+      "float_cap": 156.6,
       "float_ratio": 55.7,
-      "eff_float_cap": 155.9,
+      "eff_float_cap": 156.6,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価156億（基準100億に近接）"
+        "流通時価157億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "3232",
-      "name": "三重交通グループホールディングス",
+      "code": "3221",
+      "name": "ヨシックスホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 527.7,
+      "total_cap": 327.7,
+      "float_cap": 156.7,
+      "float_ratio": 47.8,
+      "eff_float_cap": 156.7,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価157億（基準100億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "1301",
+      "name": "極洋",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 526.2,
       "float_cap": null,
       "float_ratio": null,
-      "eff_float_cap": 158.3,
+      "eff_float_cap": 157.9,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5776,19 +3465,19 @@
       "sup_type": ""
     },
     {
-      "code": "3656",
-      "name": "ＫＬａｂ",
+      "code": "3232",
+      "name": "三重交通グループホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 171.5,
-      "float_cap": 158.6,
-      "float_ratio": 92.5,
-      "eff_float_cap": 158.6,
-      "fiscal_month": 12,
+      "total_cap": 526.7,
+      "float_cap": null,
+      "float_ratio": null,
+      "eff_float_cap": 158.0,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価159億（基準100億に近接）"
+        "流通時価158億(概算)（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5796,119 +3485,33 @@
       "code": "3315",
       "name": "日本コークス工業",
       "market_str": "プライム（内国株式）",
-      "total_cap": 291.0,
-      "float_cap": 158.7,
+      "total_cap": 293.9,
+      "float_cap": 160.3,
       "float_ratio": 54.5,
-      "eff_float_cap": 158.7,
+      "eff_float_cap": 160.3,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価159億（基準100億に近接）"
+        "流通時価160億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "4301",
-      "name": "アミューズ",
+      "code": "2674",
+      "name": "ハードオフコーポレーション",
       "market_str": "プライム（内国株式）",
-      "total_cap": 303.7,
-      "float_cap": 159.2,
-      "float_ratio": 52.4,
-      "eff_float_cap": 159.2,
+      "total_cap": 284.5,
+      "float_cap": 167.0,
+      "float_ratio": 58.7,
+      "eff_float_cap": 167.0,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価159億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "1301",
-      "name": "極洋",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 531.5,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 159.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価159億(概算)（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3221",
-      "name": "ヨシックスホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 339.0,
-      "float_cap": 162.1,
-      "float_ratio": 47.8,
-      "eff_float_cap": 162.1,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価162億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3901",
-      "name": "マークラインズ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 190.8,
-      "float_cap": 162.2,
-      "float_ratio": 85.0,
-      "eff_float_cap": 162.2,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価162億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4337",
-      "name": "ぴあ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 542.9,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 162.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価163億(概算)（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4323",
-      "name": "日本システム技術",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 477.8,
-      "float_cap": 163.2,
-      "float_ratio": 34.2,
-      "eff_float_cap": 163.2,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価163億（基準100億に近接）",
-        "流通比率34% < 基準35%"
+        "流通時価167億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -5916,10 +3519,10 @@
       "code": "3183",
       "name": "ウイン・パートナーズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 338.8,
-      "float_cap": 166.7,
+      "total_cap": 339.6,
+      "float_cap": 167.1,
       "float_ratio": 49.2,
-      "eff_float_cap": 166.7,
+      "eff_float_cap": 167.1,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5933,10 +3536,10 @@
       "code": "3561",
       "name": "力の源ホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 439.8,
-      "float_cap": 169.9,
+      "total_cap": 440.1,
+      "float_cap": 170.0,
       "float_ratio": 38.6,
-      "eff_float_cap": 169.9,
+      "eff_float_cap": 170.0,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -5947,48 +3550,14 @@
       "sup_type": ""
     },
     {
-      "code": "2674",
-      "name": "ハードオフコーポレーション",
+      "code": "3656",
+      "name": "ＫＬａｂ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 289.8,
-      "float_cap": 170.1,
-      "float_ratio": 58.7,
-      "eff_float_cap": 170.1,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価170億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3817",
-      "name": "ＳＲＡホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 567.9,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 170.4,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価170億(概算)（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3916",
-      "name": "デジタル・インフォメーション・テクノロジー",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 270.2,
-      "float_cap": 170.5,
-      "float_ratio": 63.1,
-      "eff_float_cap": 170.5,
-      "fiscal_month": 6,
+      "total_cap": 184.0,
+      "float_cap": 170.2,
+      "float_ratio": 92.5,
+      "eff_float_cap": 170.2,
+      "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -6001,10 +3570,10 @@
       "code": "3040",
       "name": "ソリトンシステムズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 354.5,
-      "float_cap": 170.7,
+      "total_cap": 355.8,
+      "float_cap": 171.3,
       "float_ratio": 48.1,
-      "eff_float_cap": 170.7,
+      "eff_float_cap": 171.3,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
@@ -6015,14 +3584,14 @@
       "sup_type": ""
     },
     {
-      "code": "4051",
-      "name": "ＧＭＯフィナンシャルゲート",
+      "code": "1929",
+      "name": "日特建設",
       "market_str": "プライム（内国株式）",
-      "total_cap": 480.4,
-      "float_cap": 173.7,
-      "float_ratio": 36.1,
-      "eff_float_cap": 173.7,
-      "fiscal_month": 9,
+      "total_cap": 479.1,
+      "float_cap": 174.0,
+      "float_ratio": 36.3,
+      "eff_float_cap": 174.0,
+      "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -6032,116 +3601,14 @@
       "sup_type": ""
     },
     {
-      "code": "4246",
-      "name": "ダイキョーニシカワ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 587.5,
-      "float_cap": null,
-      "float_ratio": null,
-      "eff_float_cap": 176.2,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価176億(概算)（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "1929",
-      "name": "日特建設",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 493.7,
-      "float_cap": 179.3,
-      "float_ratio": 36.3,
-      "eff_float_cap": 179.3,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価179億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3853",
-      "name": "アステリア",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 253.4,
-      "float_cap": 181.2,
-      "float_ratio": 71.5,
-      "eff_float_cap": 181.2,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価181億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4345",
-      "name": "シーティーエス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 338.0,
-      "float_cap": 182.8,
-      "float_ratio": 54.1,
-      "eff_float_cap": 182.8,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価183億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4396",
-      "name": "システムサポートホールディングス",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 227.2,
-      "float_cap": 183.0,
-      "float_ratio": 80.5,
-      "eff_float_cap": 183.0,
-      "fiscal_month": 6,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価183億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "2922",
       "name": "なとり",
       "market_str": "プライム（内国株式）",
-      "total_cap": 234.7,
-      "float_cap": 184.7,
+      "total_cap": 234.9,
+      "float_cap": 184.9,
       "float_ratio": 78.7,
-      "eff_float_cap": 184.7,
+      "eff_float_cap": 184.9,
       "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価185億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "4343",
-      "name": "イオンファンタジー",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 511.0,
-      "float_cap": 184.7,
-      "float_ratio": 36.2,
-      "eff_float_cap": 184.7,
-      "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
@@ -6154,10 +3621,10 @@
       "code": "3198",
       "name": "ＳＦＰホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 520.4,
-      "float_cap": 186.1,
+      "total_cap": 519.7,
+      "float_cap": 185.9,
       "float_ratio": 35.8,
-      "eff_float_cap": 186.1,
+      "eff_float_cap": 185.9,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
@@ -6168,36 +3635,19 @@
       "sup_type": ""
     },
     {
-      "code": "1930",
-      "name": "北陸電気工事",
+      "code": "3679",
+      "name": "じげん",
       "market_str": "プライム（内国株式）",
-      "total_cap": 475.2,
-      "float_cap": 186.3,
-      "float_ratio": 39.2,
-      "eff_float_cap": 186.3,
+      "total_cap": 413.5,
+      "float_cap": 187.2,
+      "float_ratio": 45.3,
+      "eff_float_cap": 187.2,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価186億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3741",
-      "name": "セック",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 356.8,
-      "float_cap": 188.9,
-      "float_ratio": 52.9,
-      "eff_float_cap": 188.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価189億（基準100億に近接）"
+        "流通時価187億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -6205,33 +3655,33 @@
       "code": "3333",
       "name": "あさひ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 328.1,
-      "float_cap": 191.2,
+      "total_cap": 325.5,
+      "float_cap": 189.7,
       "float_ratio": 58.3,
-      "eff_float_cap": 191.2,
+      "eff_float_cap": 189.7,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価191億（基準100億に近接）"
+        "流通時価190億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "2588",
-      "name": "プレミアムウォーターホールディングス",
-      "market_str": "スタンダード（内国株式）",
-      "total_cap": 1341.8,
-      "float_cap": 191.6,
-      "float_ratio": 14.3,
-      "eff_float_cap": 191.6,
+      "code": "1930",
+      "name": "北陸電気工事",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 486.5,
+      "float_cap": 190.7,
+      "float_ratio": 39.2,
+      "eff_float_cap": 190.7,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通比率14% < 基準25%"
+        "流通時価191億（基準100億に近接）"
       ],
       "sup_type": ""
     },
@@ -6253,36 +3703,36 @@
       "sup_type": ""
     },
     {
-      "code": "3679",
-      "name": "じげん",
+      "code": "3388",
+      "name": "明治電機工業",
       "market_str": "プライム（内国株式）",
-      "total_cap": 424.4,
-      "float_cap": 192.1,
-      "float_ratio": 45.3,
-      "eff_float_cap": 192.1,
+      "total_cap": 260.9,
+      "float_cap": 194.7,
+      "float_ratio": 74.6,
+      "eff_float_cap": 194.7,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価192億（基準100億に近接）"
+        "流通時価195億（基準100億に近接）"
       ],
       "sup_type": ""
     },
     {
-      "code": "3388",
-      "name": "明治電機工業",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 260.5,
-      "float_cap": 194.4,
-      "float_ratio": 74.6,
-      "eff_float_cap": 194.4,
+      "code": "2588",
+      "name": "プレミアムウォーターホールディングス",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 1375.4,
+      "float_cap": 196.4,
+      "float_ratio": 14.3,
+      "eff_float_cap": 196.4,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
       "listing_years": null,
       "reasons": [
-        "流通時価194億（基準100億に近接）"
+        "流通比率14% < 基準25%"
       ],
       "sup_type": ""
     },
@@ -6290,27 +3740,10 @@
       "code": "3199",
       "name": "綿半ホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 260.7,
-      "float_cap": 196.2,
+      "total_cap": 262.2,
+      "float_cap": 197.3,
       "float_ratio": 75.3,
-      "eff_float_cap": 196.2,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通時価196億（基準100億に近接）"
-      ],
-      "sup_type": ""
-    },
-    {
-      "code": "3771",
-      "name": "システムリサーチ",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 281.1,
-      "float_cap": 196.6,
-      "float_ratio": 69.9,
-      "eff_float_cap": 196.6,
+      "eff_float_cap": 197.3,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -6324,10 +3757,10 @@
       "code": "3632",
       "name": "グリーホールディングス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 632.0,
-      "float_cap": 209.7,
+      "total_cap": 630.3,
+      "float_cap": 209.2,
       "float_ratio": 33.2,
-      "eff_float_cap": 209.7,
+      "eff_float_cap": 209.2,
       "fiscal_month": 6,
       "risk": "warning",
       "growth_10yr": false,
@@ -6341,10 +3774,10 @@
       "code": "2653",
       "name": "イオン九州",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 964.9,
-      "float_cap": 213.7,
+      "total_cap": 962.2,
+      "float_cap": 213.1,
       "float_ratio": 22.1,
-      "eff_float_cap": 213.7,
+      "eff_float_cap": 213.1,
       "fiscal_month": 2,
       "risk": "warning",
       "growth_10yr": false,
@@ -6355,30 +3788,13 @@
       "sup_type": ""
     },
     {
-      "code": "4413",
-      "name": "ボードルア",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 650.4,
-      "float_cap": 224.9,
-      "float_ratio": 34.6,
-      "eff_float_cap": 224.9,
-      "fiscal_month": 2,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率35% < 基準35%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3150",
       "name": "グリムス",
       "market_str": "プライム（内国株式）",
-      "total_cap": 679.9,
-      "float_cap": 234.9,
+      "total_cap": 676.7,
+      "float_cap": 233.8,
       "float_ratio": 34.6,
-      "eff_float_cap": 234.9,
+      "eff_float_cap": 233.8,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -6392,10 +3808,10 @@
       "code": "1723",
       "name": "日本電技",
       "market_str": "スタンダード（内国株式）",
-      "total_cap": 1644.3,
-      "float_cap": 261.9,
+      "total_cap": 1685.1,
+      "float_cap": 268.4,
       "float_ratio": 15.9,
-      "eff_float_cap": 261.9,
+      "eff_float_cap": 268.4,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -6406,30 +3822,13 @@
       "sup_type": ""
     },
     {
-      "code": "1871",
-      "name": "ピーエス・コンストラクション",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 1259.0,
-      "float_cap": 394.9,
-      "float_ratio": 31.4,
-      "eff_float_cap": 394.9,
-      "fiscal_month": 3,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率31% < 基準35%"
-      ],
-      "sup_type": ""
-    },
-    {
       "code": "3480",
       "name": "ジェイ・エス・ビー",
       "market_str": "プライム（内国株式）",
-      "total_cap": 1144.1,
-      "float_cap": 394.9,
+      "total_cap": 1139.9,
+      "float_cap": 393.4,
       "float_ratio": 34.5,
-      "eff_float_cap": 394.9,
+      "eff_float_cap": 393.4,
       "fiscal_month": 10,
       "risk": "warning",
       "growth_10yr": false,
@@ -6440,13 +3839,30 @@
       "sup_type": ""
     },
     {
+      "code": "1871",
+      "name": "ピーエス・コンストラクション",
+      "market_str": "プライム（内国株式）",
+      "total_cap": 1275.8,
+      "float_cap": 400.1,
+      "float_ratio": 31.4,
+      "eff_float_cap": 400.1,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通比率31% < 基準35%"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "2327",
       "name": "日鉄ソリューションズ",
       "market_str": "プライム（内国株式）",
-      "total_cap": 6581.8,
-      "float_cap": 1577.9,
+      "total_cap": 6785.0,
+      "float_cap": 1626.6,
       "float_ratio": 24.0,
-      "eff_float_cap": 1577.9,
+      "eff_float_cap": 1626.6,
       "fiscal_month": 3,
       "risk": "warning",
       "growth_10yr": false,
@@ -6460,10 +3876,10 @@
       "code": "1911",
       "name": "住友林業",
       "market_str": "プライム（内国株式）",
-      "total_cap": 8078.5,
-      "float_cap": 2128.7,
+      "total_cap": 8133.7,
+      "float_cap": 2143.2,
       "float_ratio": 26.3,
-      "eff_float_cap": 2128.7,
+      "eff_float_cap": 2143.2,
       "fiscal_month": 12,
       "risk": "warning",
       "growth_10yr": false,
@@ -6472,26 +3888,21 @@
         "流通比率26% < 基準35%"
       ],
       "sup_type": ""
-    },
-    {
-      "code": "4186",
-      "name": "東京応化工業",
-      "market_str": "プライム（内国株式）",
-      "total_cap": 12217.9,
-      "float_cap": 3582.2,
-      "float_ratio": 29.3,
-      "eff_float_cap": 3582.2,
-      "fiscal_month": 12,
-      "risk": "warning",
-      "growth_10yr": false,
-      "listing_years": null,
-      "reasons": [
-        "流通比率29% < 基準35%"
-      ],
-      "sup_type": ""
     }
   ],
   "supervision": [
+    {
+      "code": "7490",
+      "name": "日新商事",
+      "type": "監理",
+      "reason": ""
+    },
+    {
+      "code": "8283",
+      "name": "ＰＡＬＴＡＣ",
+      "type": "監理",
+      "reason": ""
+    },
     {
       "code": "7901",
       "name": "マツモト",
