@@ -1,0 +1,31 @@
+name: Deploy to Cloudflare
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["荳雁ｴ邯ｭ謖∝渕貅・逶｣隕悶し繧､繝・閾ｪ蜍墓峩譁ｰ"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Deploy to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 035926d851c17dfd9cf096e0884cd474
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "CLOUDFLARE_API_TOKEN not set; skipping Cloudflare deploy."
+            exit 0
+          fi
+          mkdir -p /tmp/site
+          rsync -a docs/ /tmp/site/ --exclude .git --exclude .github --exclude scripts --exclude '*.py' --exclude requirements.txt --exclude README.md
+          npx wrangler@4 deploy --name=tse-watch --compatibility-date=2026-07-01 --assets=/tmp/site
