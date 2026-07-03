@@ -1,0 +1,26 @@
+name: Retry GitHub Pages if Errored
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 21 * * *'   # 6:15 JST
+    - cron: '15 9 * * *'    # 18:15 JST
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check and retry Pages build if errored
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          STATUS=$(gh api "repos/${{ github.repository }}/pages/builds/latest" --jq .status 2>/dev/null || echo "none")
+          echo "Pages build status: $STATUS"
+          if [ "$STATUS" = "errored" ]; then
+            echo "Retrying Pages build..."
+            gh api -X POST "repos/${{ github.repository }}/pages/builds"
+          fi
