@@ -3,7 +3,7 @@ name: Deploy to Cloudflare
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["荳雁ｴ邯ｭ謖∝渕貅・逶｣隕悶し繧､繝・閾ｪ蜍墓峩譁ｰ"]
+    workflows: ["上場維持基準 監視サイト 自動更新"]
     types: [completed]
 
 permissions:
