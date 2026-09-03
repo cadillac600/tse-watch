@@ -31,9 +31,9 @@ PREV_MONTH = TARGET_MONTH - 1 if TARGET_MONTH > 1 else 12
 def fetch_stock_list():
     print("[1/4] JPX銘柄一覧を取得中...")
     import pandas as pd
-    xls_path = "/tmp/data_j.xls"
+    xls_path = "/tmp/data_j.xlsx"
     req = urllib.request.Request(
-        "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xls",
+        "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xlsx",
         headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         open(xls_path, "wb").write(resp.read())
