@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026年9月22日 04:32",
+  "generated_at": "2026年9月23日 04:28",
   "target_month": 9,
   "prev_month": 8,
   "stocks": [
@@ -1502,6 +1502,23 @@
       "sup_type": ""
     },
     {
+      "code": "3686",
+      "name": "ディー・エル・イー",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 26.1,
+      "float_cap": 10.0,
+      "float_ratio": 38.2,
+      "eff_float_cap": 10.0,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価10億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
       "code": "2424",
       "name": "ブラス",
       "market_str": "スタンダード（内国株式）",
@@ -2548,6 +2565,23 @@
       "total_cap": 41.8,
       "float_cap": 18.3,
       "float_ratio": 43.7,
+      "eff_float_cap": 18.3,
+      "fiscal_month": 3,
+      "risk": "warning",
+      "growth_10yr": false,
+      "listing_years": null,
+      "reasons": [
+        "流通時価18億（基準10億に近接）"
+      ],
+      "sup_type": ""
+    },
+    {
+      "code": "3753",
+      "name": "フライトソリューションズ",
+      "market_str": "スタンダード（内国株式）",
+      "total_cap": 31.1,
+      "float_cap": 18.3,
+      "float_ratio": 58.8,
       "eff_float_cap": 18.3,
       "fiscal_month": 3,
       "risk": "warning",
